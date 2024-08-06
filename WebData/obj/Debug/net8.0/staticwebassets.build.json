@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "ApPcb+/qR5G83A2RE99BeJHdBRd+GmV/7b2BgWoGeIs=",
+  "Source": "WebData",
+  "BasePath": "_content/WebData",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebData\\wwwroot",
+      "Source": "WebData",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\wwwroot\\",
+      "BasePath": "_content/WebData",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\wwwroot\\favicon.ico",
+      "SourceId": "WebData",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\wwwroot\\",
+      "BasePath": "_content/WebData",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}
