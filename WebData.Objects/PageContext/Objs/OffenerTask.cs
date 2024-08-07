@@ -20,7 +20,7 @@ namespace WebData.Objects.PageContext.Objs
     {
         Created,
         Pending,
-        InProgress,
+        Working,
         Waiting,
         Finished
 

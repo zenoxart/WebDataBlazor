@@ -3,7 +3,7 @@ using MudBlazor;
 using WebData.Objects.PageContext.Manager;
 using WebData.Objects.PageContext.Service;
 
-namespace WebData.Components.Controls
+namespace WebData.Components.Pages
 {
     public partial class ProfilSettings
     {

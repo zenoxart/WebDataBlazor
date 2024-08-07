@@ -81,32 +81,33 @@
 
     private readonly PaletteDark _darkPalette = new()
         {
-            Primary = "#7e6fff",
-            Surface = "#1e1e2d",
-            Background = "#1a1a27",
-            BackgroundGray = "#151521",
-            AppbarText = "#92929f",
-            AppbarBackground = "rgba(26,26,39,0.8)",
-            DrawerBackground = "#1a1a27",
-            ActionDefault = "#74718e",
-            ActionDisabled = "#9999994d",
-            ActionDisabledBackground = "#605f6d4d",
-            TextPrimary = "#b2b0bf",
-            TextSecondary = "#92929f",
-            TextDisabled = "#ffffff33",
-            DrawerIcon = "#92929f",
-            DrawerText = "#92929f",
-            GrayLight = "#2a2833",
-            GrayLighter = "#1e1e2d",
-            Info = "#4a86ff",
-            Success = "#3dcb6c",
-            Warning = "#ffb545",
-            Error = "#ff3f5f",
-            LinesDefault = "#33323e",
-            TableLines = "#33323e",
-            Divider = "#292838",
-            OverlayLight = "#1e1e2d80",
+            Primary = "#569cd6", // A blue color used in Visual Studio for keywords
+            Surface = "#252526", // Slightly lighter than the background for card-like surfaces
+            Background = "#1e1e1e", // Main background color
+            BackgroundGray = "#2d2d30", // Used for panels and sidebars
+            AppbarText = "#d4d4d4", // Light gray for better contrast in app bars
+            AppbarBackground = "rgba(30,30,30,0.8)", // Matches the app bar with a slight transparency
+            DrawerBackground = "#2d2d30", // Sidebar background color
+            ActionDefault = "#d7ba7d", // Commonly used for UI elements like buttons (yellowish)
+            ActionDisabled = "#808080", // A softer gray for disabled actions
+            ActionDisabledBackground = "#3e3e42", // Muted dark gray for disabled backgrounds
+            TextPrimary = "#d4d4d4", // Main text color
+            TextSecondary = "#a6a6a6", // Secondary text, less prominent
+            TextDisabled = "#6f6f6f", // Disabled text color
+            DrawerIcon = "#c5c5c5", // Icon color in the drawer
+            DrawerText = "#d4d4d4", // Text color in the drawer
+            GrayLight = "#3e3e42", // Light gray for separators or inactive elements
+            GrayLighter = "#454545", // Even lighter gray for borders
+            // Info = "#9cdcfe", Light blue for informational messages
+            // Success = "#6a9955", Green for success messages
+            // Warning = "#d7ba7d", Yellow for warnings
+            // Error = "#f48771", Red for errors
+            LinesDefault = "#3e3e42", // Default line color
+            TableLines = "#3e3e42", // Line color in tables
+            Divider = "#444444", // Divider lines between elements
+            OverlayLight = "#1e1e1e80", // Overlay with transparency for modals or dialogs
         };
+
 
     public string DarkLightModeButtonIcon => _isDarkMode switch
     {
