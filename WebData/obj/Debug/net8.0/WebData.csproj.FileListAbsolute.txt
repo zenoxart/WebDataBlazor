@@ -86,3 +86,4 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debu
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.pdb
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.genruntimeconfig.cache
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\ref\WebData.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\libman.json
