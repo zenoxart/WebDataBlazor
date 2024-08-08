@@ -23,3 +23,28 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Common\o
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Common\obj\Debug\net8.0\refint\WebData.Common.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.pdb
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Common\obj\Debug\net8.0\ref\WebData.Common.dll
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\bin\Debug\net8.0\WebData.Common.staticwebassets.runtime.json
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\bin\Debug\net8.0\WebData.Common.deps.json
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\bin\Debug\net8.0\WebData.Common.dll
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\bin\Debug\net8.0\WebData.Common.pdb
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\bin\Debug\net8.0\WebData.Objects.dll
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\bin\Debug\net8.0\WebData.Objects.pdb
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.csproj.AssemblyReference.cache
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.AssemblyInfoInputs.cache
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.AssemblyInfo.cs
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.csproj.CoreCompileInputs.cache
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.sourcelink.json
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets\msbuild.WebData.Common.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets\msbuild.build.WebData.Common.props
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebData.Common.props
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebData.Common.props
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\scopedcss\bundle\WebData.Common.styles.css
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData..F89F67D4.Up2Date
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.dll
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\refint\WebData.Common.dll
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\WebData.Common.pdb
+C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Common\obj\Debug\net8.0\ref\WebData.Common.dll

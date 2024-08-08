@@ -1,0 +1,6 @@
+@WebData.Backend_HostAddress = http://localhost:5033
+
+GET {{WebData.Backend_HostAddress}}/personalbacklog/
+Accept: application/json
+
+###

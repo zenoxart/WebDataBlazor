@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css",
+      "Id": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css",
       "PackagePath": "staticwebassets\\WebData.App.styles.css"
     },
     {
-      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
+      "Id": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

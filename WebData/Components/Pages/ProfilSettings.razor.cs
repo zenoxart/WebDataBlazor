@@ -24,12 +24,15 @@ namespace WebData.Components.Pages
         /// </summary>
         protected override async Task OnInitializedAsync()
         {
+
+            ApiService.BaseURL = "https://localhost:7248/";
+
             // Referenziere die Services zu den Managern
             AppBehavior.InitServices(ApiService, DialogService);
 
 
             // Läd die Daten
-            // await AppBehavior.Timeline.LoadData();
+            await AppBehavior.Aufgaben.LoadData();
 
 
         }
