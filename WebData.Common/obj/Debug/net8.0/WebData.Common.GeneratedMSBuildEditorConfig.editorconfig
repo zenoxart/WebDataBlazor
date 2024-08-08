@@ -1,0 +1,46 @@
+is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudIllegalParameters = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebData.Common
+build_property.RootNamespace = WebData.Common
+build_property.ProjectDir = C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Common\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Common
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.Common/Controls/BacklogList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQmFja2xvZ0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.Common/Controls/LineChart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcTGluZUNoYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.Common/Controls/News.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcTmV3cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.Common/Controls/PersonalDataForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUGVyc29uYWxEYXRhRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.Common/Controls/PieChart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUGllQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.Common/Controls/Timeline.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcVGltZWxpbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

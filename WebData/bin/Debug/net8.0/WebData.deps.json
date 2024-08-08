@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "WebData/1.0.0": {
         "dependencies": {
-          "MudBlazor": "7.5.0",
+          "MudBlazor": "7.6.0",
+          "WebData.Common": "1.0.0",
           "WebData.Objects": "1.0.0"
         },
         "runtime": {
@@ -143,7 +144,7 @@
           }
         }
       },
-      "MudBlazor/7.5.0": {
+      "MudBlazor/7.6.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.6",
           "Microsoft.AspNetCore.Components.Web": "8.0.6",
@@ -151,15 +152,24 @@
         },
         "runtime": {
           "lib/net8.0/MudBlazor.dll": {
-            "assemblyVersion": "7.5.0.0",
-            "fileVersion": "7.5.0.0"
+            "assemblyVersion": "7.6.0.0",
+            "fileVersion": "7.6.0.0"
           }
         }
       },
       "System.IO.Pipelines/8.0.0": {},
+      "WebData.Common/1.0.0": {
+        "dependencies": {
+          "MudBlazor": "7.6.0",
+          "WebData.Objects": "1.0.0"
+        },
+        "runtime": {
+          "WebData.Common.dll": {}
+        }
+      },
       "WebData.Objects/1.0.0": {
         "dependencies": {
-          "MudBlazor": "7.5.0"
+          "MudBlazor": "7.6.0"
         },
         "runtime": {
           "WebData.Objects.dll": {}
@@ -271,12 +281,12 @@
       "path": "microsoft.jsinterop/8.0.6",
       "hashPath": "microsoft.jsinterop.8.0.6.nupkg.sha512"
     },
-    "MudBlazor/7.5.0": {
+    "MudBlazor/7.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yW1+6b9bG0OjMa7FSUnYZ2D9v09cTru8Hri1cVekRzdQpA/rieSgbfrWY9KQOzMW+1LbOySTEEipun6GCarQNg==",
-      "path": "mudblazor/7.5.0",
-      "hashPath": "mudblazor.7.5.0.nupkg.sha512"
+      "sha512": "sha512-6UVQ7TvIw/czNyjmqdUGYS+Fk3PJTvbhFy4/agqm2pzwam31lYJbZXPYr5w7CG4aw9QTgj02ajd6xTZaeROiiA==",
+      "path": "mudblazor/7.6.0",
+      "hashPath": "mudblazor.7.6.0.nupkg.sha512"
     },
     "System.IO.Pipelines/8.0.0": {
       "type": "package",
@@ -284,6 +294,11 @@
       "sha512": "sha512-FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "path": "system.io.pipelines/8.0.0",
       "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
+    },
+    "WebData.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "WebData.Objects/1.0.0": {
       "type": "project",

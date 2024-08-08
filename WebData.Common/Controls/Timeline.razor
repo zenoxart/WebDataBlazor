@@ -1,0 +1,45 @@
+﻿@using MudBlazor
+@using WebData.Objects
+@using WebData.Objects.PageContext.Objs
+<MudCard Height="250pt">
+    <MudTimeline TimelineOrientation="_orientation" TimelinePosition="_position">
+
+        @foreach (var item in CurrentTimeLine)
+        {
+            <MudTimelineItem Color="@item.Color" Variant="Variant.Filled">
+                <ItemContent>
+                    <MudAlert Severity="@item.Type">@item.Message</MudAlert>
+                </ItemContent>
+                <ItemOpposite>
+                    <MudText Color="@item.Color">@item.Time.ToString()</MudText>
+                </ItemOpposite>
+            </MudTimelineItem>
+        }
+
+    </MudTimeline>
+</MudCard>
+@code {
+    private TimelinePosition _position { get; set; } = TimelinePosition.Start;
+    private TimelineOrientation _orientation { get; set; } = TimelineOrientation.Vertical;
+
+    private void OnOrientationChange(TimelineOrientation value)
+    {
+        _orientation = value;
+        switch (value)
+        {
+            case TimelineOrientation.Vertical:
+                if (_position is TimelinePosition.Top or TimelinePosition.Bottom)
+                    _position = TimelinePosition.Start;
+                break;
+            case TimelineOrientation.Horizontal:
+                if (_position is TimelinePosition.Start or TimelinePosition.Left or TimelinePosition.Right or TimelinePosition.End)
+                    _position = TimelinePosition.Top;
+                break;
+        }
+    }
+
+    [Parameter]
+    public TimelineList CurrentTimeLine { get; set; } = new TimelineList();
+
+
+}

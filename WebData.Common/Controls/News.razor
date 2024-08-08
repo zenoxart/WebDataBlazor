@@ -1,0 +1,19 @@
+﻿@using MudBlazor
+@using WebData.Objects.PageContext.Objs
+
+<MudCard Height="250pt">
+    <MudGrid Spacing="2">
+        @foreach (var item in NewsList)
+        {
+            <MudItem md="12">
+                <MudText Align="Align.Center" Typo="Typo.h6">@item.Title</MudText>
+                <MudText Typo="Typo.body1" Class="pl-2 pr-2">@item.Message</MudText>
+            </MudItem>
+        }
+    </MudGrid>
+</MudCard>
+
+@code {
+    [Parameter]
+    public NewsObjectList NewsList { get; set; } = new NewsObjectList();
+}

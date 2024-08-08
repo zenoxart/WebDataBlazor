@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "upHAjo3c7Bg=",
+  "dgSpecHash": "2BHU1/VRMfE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\WebData.csproj",
+  "projectFilePath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.6\\microsoft.aspnetcore.authorization.8.0.6.nupkg.sha512",
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.6\\microsoft.aspnetcore.components.8.0.6.nupkg.sha512",
@@ -18,7 +18,7 @@
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.jsinterop\\8.0.6\\microsoft.jsinterop.8.0.6.nupkg.sha512",
-    "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.5.0\\mudblazor.7.5.0.nupkg.sha512",
+    "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\mudblazor.7.6.0.nupkg.sha512",
     "C:\\Users\\U731233\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512"
   ],
   "logs": []

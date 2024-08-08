@@ -1,50 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\",
+  "WorkspaceRootPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B8C35AF-F4B1-43CF-8B09-07C38F74DB10}|..\\WebData.App\\WebData.App.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdatablazor\\webdata.app\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\controls\\piechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\controls\\piechart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B8C35AF-F4B1-43CF-8B09-07C38F74DB10}|..\\WebData.App\\WebData.App.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdatablazor\\webdata.app\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\controls\\news.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\controls\\news.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\controls\\profilsettings.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\controls\\profilsettings.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{554E1619-EB4A-4734-A76A-01937775A01C}|..\\WebData.Objects\\WebData.Objects.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata.objects\\pagecontext\\manager\\aufgabenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{554E1619-EB4A-4734-A76A-01937775A01C}|..\\WebData.Objects\\WebData.Objects.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata.objects\\pagecontext\\objs\\offenertask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\controls\\profilsettings.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\controls\\profilsettings.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{554E1619-EB4A-4734-A76A-01937775A01C}|..\\WebData.Objects\\WebData.Objects.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata.objects\\pagecontext\\manager\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{554E1619-EB4A-4734-A76A-01937775A01C}|..\\WebData.Objects\\WebData.Objects.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdata.objects\\pagecontext\\objs\\benutzerobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|c:\\users\\u731233\\onedrive - voestalpine\\programme\\webdatablazor\\webdata\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97D1E763-9189-4A79-91BC-DFAA471B3AC3}|WebData.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,151 +28,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PieChart.razor",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\PieChart.razor",
-              "RelativeDocumentMoniker": "Components\\Controls\\PieChart.razor",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\PieChart.razor",
-              "RelativeToolTip": "Components\\Controls\\PieChart.razor",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "..\\WebData.App\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\Components\\Routes.razor",
+              "RelativeToolTip": "..\\WebData.App\\Components\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T08:47:57.888Z",
+              "WhenOpened": "2024-08-08T13:26:04.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "..\\WebData.App\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
+              "RelativeToolTip": "..\\WebData.App\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-08T13:24:56.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "News.razor",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\News.razor",
-              "RelativeDocumentMoniker": "Components\\Controls\\News.razor",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\News.razor",
-              "RelativeToolTip": "Components\\Controls\\News.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T08:47:55.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AufgabenManager.cs",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Manager\\AufgabenManager.cs",
-              "RelativeDocumentMoniker": "..\\WebData.Objects\\PageContext\\Manager\\AufgabenManager.cs",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Manager\\AufgabenManager.cs",
-              "RelativeToolTip": "..\\WebData.Objects\\PageContext\\Manager\\AufgabenManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T06:29:04.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaseManager.cs",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Manager\\BaseManager.cs",
-              "RelativeDocumentMoniker": "..\\WebData.Objects\\PageContext\\Manager\\BaseManager.cs",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Manager\\BaseManager.cs",
-              "RelativeToolTip": "..\\WebData.Objects\\PageContext\\Manager\\BaseManager.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAD4vxQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T06:16:06.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Home.razor.cs",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Pages\\Home.razor.cs",
-              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor.cs",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Pages\\Home.razor.cs",
-              "RelativeToolTip": "Components\\Pages\\Home.razor.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T06:13:17.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProfilSettings.razor.cs",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\ProfilSettings.razor.cs",
-              "RelativeDocumentMoniker": "Components\\Controls\\ProfilSettings.razor.cs",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\ProfilSettings.razor.cs",
-              "RelativeToolTip": "Components\\Controls\\ProfilSettings.razor.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAEwBsAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T06:13:09.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OffenerTask.cs",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Objs\\OffenerTask.cs",
-              "RelativeDocumentMoniker": "..\\WebData.Objects\\PageContext\\Objs\\OffenerTask.cs",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Objs\\OffenerTask.cs",
-              "RelativeToolTip": "..\\WebData.Objects\\PageContext\\Objs\\OffenerTask.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T06:07:23.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T05:41:56.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T05:41:50.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T05:41:44.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BenutzerObject.cs",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Objs\\BenutzerObject.cs",
-              "RelativeDocumentMoniker": "..\\WebData.Objects\\PageContext\\Objs\\BenutzerObject.cs",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\PageContext\\Objs\\BenutzerObject.cs",
-              "RelativeToolTip": "..\\WebData.Objects\\PageContext\\Objs\\BenutzerObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T05:39:01.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfilSettings.razor",
-              "DocumentMoniker": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\ProfilSettings.razor",
-              "RelativeDocumentMoniker": "Components\\Controls\\ProfilSettings.razor",
-              "ToolTip": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\Components\\Controls\\ProfilSettings.razor",
-              "RelativeToolTip": "Components\\Controls\\ProfilSettings.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T05:31:07.897Z",
+              "WhenOpened": "2024-08-08T13:24:32.433Z",
               "EditorCaption": ""
             }
           ]

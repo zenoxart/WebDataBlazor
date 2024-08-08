@@ -1,0 +1,122 @@
+﻿@using MudBlazor
+@using WebData.Objects.PageContext.Manager
+@using WebData.Objects.PageContext.Service
+@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
+        <MudSpacer />
+        <MudTooltip Text="Switch Theme">
+            <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
+        </MudTooltip>
+        <MudTooltip Text="Profile">
+            <MudBadge Content="3" Overlap="true" Class="mx-6 my-4">
+                <MudLink Href="/userprofile">
+                    <MudAvatar Color="Color.Primary">M</MudAvatar>
+                </MudLink>
+            </MudBadge>
+        </MudTooltip>
+        <MudTooltip Text="App-Settings">
+            <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+        </MudTooltip>
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Variant="@DrawerVariant.Mini" OpenMiniOnHover="true">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent Class="mt-16 pa-4">
+        @Body
+    </MudMainContent>
+    
+</MudLayout>
+
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+@code {
+    private bool _drawerOpen = true;
+    private bool _isDarkMode = true;
+    private MudTheme? _theme = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        _theme = new()
+            {
+                PaletteLight = _lightPalette,
+                PaletteDark = _darkPalette,
+                LayoutProperties = new LayoutProperties()
+            };
+    }
+
+
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private void DarkModeToggle()
+    {
+        _isDarkMode = !_isDarkMode;
+    }
+
+    private readonly PaletteLight _lightPalette = new()
+        {
+            Black = "#110e2d",
+            AppbarText = "#424242",
+            AppbarBackground = "rgba(255,255,255,0.8)",
+            DrawerBackground = "#ffffff",
+            GrayLight = "#e8e8e8",
+            GrayLighter = "#f9f9f9",
+        };
+
+    private readonly PaletteDark _darkPalette = new()
+        {
+            Primary = "#569cd6", // A blue color used in Visual Studio for keywords
+            Surface = "#252526", // Slightly lighter than the background for card-like surfaces
+            Background = "#1e1e1e", // Main background color
+            BackgroundGray = "#2d2d30", // Used for panels and sidebars
+            AppbarText = "#d4d4d4", // Light gray for better contrast in app bars
+            AppbarBackground = "rgba(30,30,30,0.8)", // Matches the app bar with a slight transparency
+            DrawerBackground = "#2d2d30", // Sidebar background color
+            ActionDefault = "#d7ba7d", // Commonly used for UI elements like buttons (yellowish)
+            ActionDisabled = "#808080", // A softer gray for disabled actions
+            ActionDisabledBackground = "#3e3e42", // Muted dark gray for disabled backgrounds
+            TextPrimary = "#d4d4d4", // Main text color
+            TextSecondary = "#a6a6a6", // Secondary text, less prominent
+            TextDisabled = "#6f6f6f", // Disabled text color
+            DrawerIcon = "#c5c5c5", // Icon color in the drawer
+            DrawerText = "#d4d4d4", // Text color in the drawer
+            GrayLight = "#3e3e42", // Light gray for separators or inactive elements
+            GrayLighter = "#454545", // Even lighter gray for borders
+            // Info = "#9cdcfe", Light blue for informational messages
+            // Success = "#6a9955", Green for success messages
+            // Warning = "#d7ba7d", Yellow for warnings
+            // Error = "#f48771", Red for errors
+            LinesDefault = "#3e3e42", // Default line color
+            TableLines = "#3e3e42", // Line color in tables
+            Divider = "#444444", // Divider lines between elements
+            OverlayLight = "#1e1e1e80", // Overlay with transparency for modals or dialogs
+        };
+
+
+    public string DarkLightModeButtonIcon => _isDarkMode switch
+    {
+        true => Icons.Material.Rounded.AutoMode,
+        false => Icons.Material.Outlined.DarkMode,
+    };
+
+   
+}
+
+

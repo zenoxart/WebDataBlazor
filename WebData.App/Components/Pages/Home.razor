@@ -1,0 +1,23 @@
+﻿@page "/"
+@using MudBlazor
+
+<MudGrid>
+    <MudItem lg="8" md="6" sm="12">
+        <MudCard>
+            <WebData.Common.Controls.News NewsList="@AppBehavior.News.NewsList" />
+        </MudCard>
+    </MudItem>
+    <MudItem lg="4" md="6" sm="12">
+        <MudCard>
+            <WebData.Common.Controls.Timeline CurrentTimeLine="@AppBehavior.Timeline.CurrentTimeline" />
+        </MudCard>
+    </MudItem>
+    <MudItem lg="4" md="6" sm="12">
+        <WebData.Common.Controls.PieChart />
+    </MudItem>
+    <MudItem lg ="8" md="6" sm="12">
+        <MudCard>
+            
+        </MudCard>
+    </MudItem>
+</MudGrid>

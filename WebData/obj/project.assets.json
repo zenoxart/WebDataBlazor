@@ -228,7 +228,7 @@
           }
         }
       },
-      "MudBlazor/7.5.0": {
+      "MudBlazor/7.6.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.6",
@@ -268,6 +268,23 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "WebData.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MudBlazor": "7.6.0",
+          "WebData.Objects": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebData.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebData.Common.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "WebData.Objects/1.0.0": {
         "type": "project",
@@ -651,10 +668,10 @@
         "microsoft.jsinterop.nuspec"
       ]
     },
-    "MudBlazor/7.5.0": {
-      "sha512": "yW1+6b9bG0OjMa7FSUnYZ2D9v09cTru8Hri1cVekRzdQpA/rieSgbfrWY9KQOzMW+1LbOySTEEipun6GCarQNg==",
+    "MudBlazor/7.6.0": {
+      "sha512": "6UVQ7TvIw/czNyjmqdUGYS+Fk3PJTvbhFy4/agqm2pzwam31lYJbZXPYr5w7CG4aw9QTgj02ajd6xTZaeROiiA==",
       "type": "package",
-      "path": "mudblazor/7.5.0",
+      "path": "mudblazor/7.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -671,7 +688,7 @@
         "lib/net7.0/MudBlazor.xml",
         "lib/net8.0/MudBlazor.dll",
         "lib/net8.0/MudBlazor.xml",
-        "mudblazor.7.5.0.nupkg.sha512",
+        "mudblazor.7.6.0.nupkg.sha512",
         "mudblazor.nuspec",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
@@ -706,6 +723,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "WebData.Common/1.0.0": {
+      "type": "project",
+      "path": "../WebData.Common/WebData.Common.csproj",
+      "msbuildProject": "../WebData.Common/WebData.Common.csproj"
+    },
     "WebData.Objects/1.0.0": {
       "type": "project",
       "path": "../WebData.Objects/WebData.Objects.csproj",
@@ -715,6 +737,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "MudBlazor >= 7.*",
+      "WebData.Common >= 1.0.0",
       "WebData.Objects >= 1.0.0"
     ]
   },
@@ -725,11 +748,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\WebData.csproj",
+      "projectUniqueName": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj",
       "projectName": "WebData",
-      "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\WebData.csproj",
+      "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj",
       "packagesPath": "C:\\Users\\U731233\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData\\obj\\",
+      "outputPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -751,8 +774,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\WebData.Objects.csproj": {
-              "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\WebData.Objects.csproj"
+            "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj": {
+              "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj"
+            },
+            "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
+              "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj"
             }
           }
         }

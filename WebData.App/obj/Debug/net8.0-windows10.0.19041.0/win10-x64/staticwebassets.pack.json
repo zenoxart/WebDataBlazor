@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css",
+      "PackagePath": "staticwebassets\\WebData.App.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.WebData.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.WebData.App.props",
+      "PackagePath": "build\\WebData.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.WebData.App.props",
+      "PackagePath": "buildMultiTargeting\\WebData.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.WebData.App.props",
+      "PackagePath": "buildTransitive\\WebData.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t7O4vtmVK2I=",
+  "dgSpecHash": "qeB2MDXL2Nw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebData.Objects\\WebData.Objects.csproj",
+  "projectFilePath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.6\\microsoft.aspnetcore.authorization.8.0.6.nupkg.sha512",
     "C:\\Users\\U731233\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.6\\microsoft.aspnetcore.components.8.0.6.nupkg.sha512",

@@ -13,6 +13,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\WebData.Common\WebData.Common.csproj" />
     <ProjectReference Include="..\WebData.Objects\WebData.Objects.csproj" />
   </ItemGroup>
 </Project>
