@@ -1,0 +1,55 @@
+﻿@page "/login"
+@using System.ComponentModel.DataAnnotations
+
+<MudPaper Class="d-flex justify-center align-center" Style="height: 100vh;">
+
+    <MudCard Style="width: 400px; padding: 20px;">
+
+        <MudTabs @bind-ActivePanelIndex="@activeTab" Rounded="true">
+            <MudTabPanel Text="Login">
+                <MudForm Model="@loginModel" @ref="loginForm">
+                    <MudTextField Label="Email" @bind-Value="@loginModel.Email" Required="true" RequiredError="Email is required" />
+                    <MudTextField Label="Password" @bind-Value="@loginModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" />
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Login" Disabled="@isLoggingIn">Login</MudButton>
+                    @if (LoginAlert)
+                    {
+                        @if (LoginSuccess)
+                        {
+                            <MudAlert Severity="Severity.Success">Login-Success</MudAlert>
+                        }
+                        else
+                        {
+                            <MudAlert Severity="Severity.Error">Login-Failed</MudAlert>
+                        }
+                    }
+                </MudForm>
+            </MudTabPanel>
+            <MudTabPanel Text="Register">
+                <MudForm Model="@registerModel" @ref="registerForm">
+                    <MudTextField Label="Name" @bind-Value="@registerModel.Name" Required="true" RequiredError="Name is required" />
+                    <MudTextField Label="Email" @bind-Value="@registerModel.Email" Required="true" RequiredError="Email is required" />
+                    <MudTextField Label="Password" @bind-Value="@registerModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" />
+                    <MudTextField Label="Confirm Password" @bind-Value="@registerModel.ConfirmPassword" InputType="InputType.Password" Required="true" RequiredError="Please confirm your password" />
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Register" Disabled="@isRegistering">Register</MudButton>
+                    @if (RegisterAlert)
+                    {
+                        @if (RegisterSuccess)
+                        {
+                            <MudAlert Severity="Severity.Success">Register-Success</MudAlert>
+                        }
+                        else
+                        {
+                            <MudAlert Severity="Severity.Error">Register-Failed</MudAlert>
+                        }
+                    }
+                </MudForm>
+            </MudTabPanel>
+        </MudTabs>
+
+
+    </MudCard>
+</MudPaper>
+
+@code {
+
+}

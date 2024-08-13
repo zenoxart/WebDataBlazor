@@ -1,1 +1,1 @@
-C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.App\WebData.App.csproj;x64
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\WebData.App.csproj;x64

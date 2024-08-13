@@ -10,19 +10,6 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebData.Objects\obj\Debug\net8
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebData.Objects\obj\Debug\net8.0\refint\WebData.Objects.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebData.Objects\obj\Debug\net8.0\WebData.Objects.pdb
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebData.Objects\obj\Debug\net8.0\ref\WebData.Objects.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.deps.json
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.pdb
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.csproj.AssemblyReference.cache
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.AssemblyInfoInputs.cache
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.AssemblyInfo.cs
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.csproj.CoreCompileInputs.cache
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.sourcelink.json
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\refint\WebData.Objects.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.pdb
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\ref\WebData.Objects.dll
 C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.deps.json
 C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.dll
 C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.pdb
@@ -36,3 +23,16 @@ C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\W
 C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\refint\WebData.Objects.dll
 C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.pdb
 C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\ref\WebData.Objects.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.deps.json
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\bin\Debug\net8.0\WebData.Objects.pdb
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.csproj.AssemblyReference.cache
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.AssemblyInfoInputs.cache
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.AssemblyInfo.cs
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.csproj.CoreCompileInputs.cache
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.sourcelink.json
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\refint\WebData.Objects.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\WebData.Objects.pdb
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.Objects\obj\Debug\net8.0\ref\WebData.Objects.dll

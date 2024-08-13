@@ -1,10 +1,11 @@
 ﻿using System.Net.Http.Json;
+using WebData.Objects.PageContext.Utilities;
 
 namespace WebData.Objects.PageContext.Service;
 
 public class ApiService(HttpClient httpClient)
 {
-    public string BaseURL { get; set; }
+    public string BaseURL { get; set; } = ConfigHandler.APIUrlBase;
     private readonly HttpClient _httpClient = httpClient;
 
     public async Task<bool> CheckConncetion(string url)

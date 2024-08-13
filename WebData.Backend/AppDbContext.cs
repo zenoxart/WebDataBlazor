@@ -9,5 +9,6 @@ namespace WebData.Backend
 
         // Define your DbSets (tables) here
         public DbSet<Aufgabe> PersonenAufgaben { get; set; }
+        public DbSet<BenutzerObject> User { get; set; }
     }
 }

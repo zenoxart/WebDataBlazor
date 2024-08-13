@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebData.Common", "WebData.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebData.App", "WebData.App\WebData.App.csproj", "{0B8C35AF-F4B1-43CF-8B09-07C38F74DB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebData.Backend", "WebData.Backend\WebData.Backend.csproj", "{D52F0FF2-2414-4C9C-A945-B11C738E3BD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebData.Backend", "WebData.Backend\WebData.Backend.csproj", "{D52F0FF2-2414-4C9C-A945-B11C738E3BD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
