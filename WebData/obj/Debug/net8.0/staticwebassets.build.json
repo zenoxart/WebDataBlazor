@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "8UCoRW7J3FpIfylj/hQQQyLH1OJHkZ6iZs1tjajWpR4=",
+  "Hash": "iKUxYDnE9JgmteAPFXF742DBdJxq4FsoNPqIGTKsEKU=",
   "Source": "WebData",
   "BasePath": "_content/WebData",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
+      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
       "Version": 2,
       "Source": "WebData.Common",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "WebData\\wwwroot",
       "Source": "WebData",
-      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\wwwroot\\",
       "BasePath": "_content/WebData",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -45,13 +45,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -64,13 +64,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\wwwroot\\favicon.ico",
       "SourceId": "WebData",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\wwwroot\\",
       "BasePath": "_content/WebData",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

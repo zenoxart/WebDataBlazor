@@ -12,65 +12,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebData.App
 build_property.RootNamespace = WebData.App
-build_property.ProjectDir = C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\
+build_property.ProjectDir = C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App
+build_property.MSBuildProjectDirectory = C:\Users\zenox\Documents\GitHub\WebDataBlazor\WebData.App
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/App.xaml]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WebData.App.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/MainPage.xaml]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WebData.App.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/Components/Pages/Home.razor]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/Components/Pages/ProfilSettings.razor]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/Components/Pages/ProfilSettings.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxTZXR0aW5ncy5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/Components/Routes.razor]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/Components/Routes.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/Components/_Imports.razor]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/Components/_Imports.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/Components/Layout/MainLayout.razor]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-15uu2io4ss
 
-[C:/Users/U731233/OneDrive - voestalpine/Programme/WebDataBlazor/WebData.App/Components/Layout/NavMenu.razor]
+[C:/Users/zenox/Documents/GitHub/WebDataBlazor/WebData.App/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==

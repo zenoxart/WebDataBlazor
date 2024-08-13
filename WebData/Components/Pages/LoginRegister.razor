@@ -1,5 +1,7 @@
 ﻿@page "/login"
+@layout LoginLayout
 @using System.ComponentModel.DataAnnotations
+@using WebData.Components.Layout
 
 <MudPaper Class="d-flex justify-center align-center" Style="height: 100vh;">
 
@@ -8,8 +10,10 @@
         <MudTabs @bind-ActivePanelIndex="@activeTab" Rounded="true">
             <MudTabPanel Text="Login">
                 <MudForm Model="@loginModel" @ref="loginForm">
-                    <MudTextField Label="Email" @bind-Value="@loginModel.Email" Required="true" RequiredError="Email is required" />
-                    <MudTextField Label="Password" @bind-Value="@loginModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" />
+                    <MudTextField Label="Email" @bind-Value="@loginModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
+                                  Class="my-textfield" />
+                    <MudTextField Label="Password" @bind-Value="@loginModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" Immediate="true"
+                                  Class="my-textfield" />
                     <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Login" Disabled="@isLoggingIn">Login</MudButton>
                     @if (LoginAlert)
                     {
@@ -26,10 +30,14 @@
             </MudTabPanel>
             <MudTabPanel Text="Register">
                 <MudForm Model="@registerModel" @ref="registerForm">
-                    <MudTextField Label="Name" @bind-Value="@registerModel.Name" Required="true" RequiredError="Name is required" />
-                    <MudTextField Label="Email" @bind-Value="@registerModel.Email" Required="true" RequiredError="Email is required" />
-                    <MudTextField Label="Password" @bind-Value="@registerModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" />
-                    <MudTextField Label="Confirm Password" @bind-Value="@registerModel.ConfirmPassword" InputType="InputType.Password" Required="true" RequiredError="Please confirm your password" />
+                    <MudTextField Label="Name" @bind-Value="@registerModel.Name" Required="true" RequiredError="Name is required" Immediate="true"
+                                  Class="my-textfield" />
+                    <MudTextField Label="Email" @bind-Value="@registerModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
+                                  Class="my-textfield" />
+                    <MudTextField Label="Password" @bind-Value="@registerModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" Immediate="true"
+                                  Class="my-textfield" />
+                    <MudTextField Label="Confirm Password" @bind-Value="@registerModel.ConfirmPassword" InputType="InputType.Password" Required="true" RequiredError="Please confirm your password" Immediate="true"
+                                  Class="my-textfield" />
                     <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Register" Disabled="@isRegistering">Register</MudButton>
                     @if (RegisterAlert)
                     {
@@ -49,6 +57,41 @@
 
     </MudCard>
 </MudPaper>
+<style>
+    /* General autofill styling */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0px 1000px #252526 inset !important;
+        box-shadow: 0 0 0px 1000px #252526 inset !important;
+        -webkit-text-fill-color: #d4d4d4 !important;
+        border-color: #444444 !important;
+    }
+
+        /* Adjust label when autofilled */
+        input:-webkit-autofill + label.mud-input-label,
+        input:-webkit-autofill:hover + label.mud-input-label,
+        input:-webkit-autofill:focus + label.mud-input-label,
+        input:-webkit-autofill:active + label.mud-input-label {
+            transform: translateY(-1.5rem) scale(0.75) !important;
+            color: #a6a6a6 !important;
+            opacity: 1 !important;
+        }
+
+    /* Ensure the input height remains consistent */
+    .mud-input-root {
+        height: auto;
+        padding-top: 1.5rem !important; /* Adjust padding to ensure space for the label */
+    }
+
+        /* Force the label to be consistent when autofill is active */
+        .mud-input-root input:-webkit-autofill ~ label {
+            transform: translateY(-1.5rem) scale(0.75) !important;
+            color: #a6a6a6 !important;
+        }
+
+</style>
 
 @code {
 

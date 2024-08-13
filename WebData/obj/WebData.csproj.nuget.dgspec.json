@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj": {}
+    "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\WebData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj": {
+    "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
+        "projectUniqueName": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
         "projectName": "WebData.Common",
-        "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
-        "packagesPath": "C:\\Users\\U731233\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\obj\\",
+        "projectPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
+        "packagesPath": "C:\\Users\\zenox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\U731233\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zenox\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
-                "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj"
+              "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
+                "projectPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj"
               }
             }
           }
@@ -82,20 +82,20 @@
         }
       }
     },
-    "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
+    "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj",
+        "projectUniqueName": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj",
         "projectName": "WebData.Objects",
-        "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj",
-        "packagesPath": "C:\\Users\\U731233\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\obj\\",
+        "projectPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj",
+        "packagesPath": "C:\\Users\\zenox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\U731233\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zenox\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -153,20 +153,20 @@
         }
       }
     },
-    "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj": {
+    "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\WebData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj",
+        "projectUniqueName": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\WebData.csproj",
         "projectName": "WebData",
-        "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\WebData.csproj",
-        "packagesPath": "C:\\Users\\U731233\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData\\obj\\",
+        "projectPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\WebData.csproj",
+        "packagesPath": "C:\\Users\\zenox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\U731233\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zenox\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -182,11 +182,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj": {
-                "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj"
+              "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj": {
+                "projectPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj"
               },
-              "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
-                "projectPath": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj"
+              "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj": {
+                "projectPath": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Objects\\WebData.Objects.csproj"
               }
             }
           }

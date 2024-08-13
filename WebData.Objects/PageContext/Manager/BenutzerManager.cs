@@ -30,5 +30,7 @@ namespace WebData.Objects.PageContext.Manager
                 new ChartSeries() { Name = "Series 2", Data = new double[] { 35, 41, 35, 51, 49, 62, 69, 91, 148 } },
             }
         };
+
+        public static bool IsAuthenticated { get; set; } = false;
     }
 }

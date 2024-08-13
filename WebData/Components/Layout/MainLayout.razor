@@ -6,7 +6,7 @@
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
-<MudLayout>
+<MudLayout >
     <MudAppBar Elevation="1">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
@@ -31,7 +31,7 @@
     <MudMainContent Class="mt-16 pa-4">
         @Body
     </MudMainContent>
-    
+
 </MudLayout>
 
 
@@ -46,6 +46,7 @@
     private bool _isDarkMode = true;
     private MudTheme? _theme = null;
 
+    private string hiddenBar = "visibility: hidden";
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -56,6 +57,8 @@
                 PaletteDark = _darkPalette,
                 LayoutProperties = new LayoutProperties()
             };
+
+       
     }
 
 
@@ -98,10 +101,10 @@
             DrawerText = "#d4d4d4", // Text color in the drawer
             GrayLight = "#3e3e42", // Light gray for separators or inactive elements
             GrayLighter = "#454545", // Even lighter gray for borders
-            // Info = "#9cdcfe", Light blue for informational messages
-            // Success = "#6a9955", Green for success messages
-            // Warning = "#d7ba7d", Yellow for warnings
-            // Error = "#f48771", Red for errors
+                                     // Info = "#9cdcfe", Light blue for informational messages
+                                     // Success = "#6a9955", Green for success messages
+                                     // Warning = "#d7ba7d", Yellow for warnings
+                                     // Error = "#f48771", Red for errors
             LinesDefault = "#3e3e42", // Default line color
             TableLines = "#3e3e42", // Line color in tables
             Divider = "#444444", // Divider lines between elements
@@ -115,7 +118,7 @@
         false => Icons.Material.Outlined.DarkMode,
     };
 
-   
-}
+
+    }
 
 
