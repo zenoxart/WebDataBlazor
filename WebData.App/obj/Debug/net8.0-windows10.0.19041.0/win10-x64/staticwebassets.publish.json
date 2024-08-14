@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "Qh7AnXf9IDTvIxZSzdQAvEtvbcoF4KlIruIJXybJc+8=",
+  "Hash": "4rEgHuJr/n238cCTTY0V6KbzdOg8YISwhYRRSjEB5bY=",
   "Source": "WebData.App",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.Common\\WebData.Common.csproj",
       "Version": 2,
       "Source": "WebData.Common",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "WebData.App\\wwwroot",
       "Source": "WebData.App",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -45,13 +45,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -64,13 +64,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\zenox\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\U731233\\.nuget\\packages\\mudblazor\\7.6.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css",
       "SourceId": "WebData.App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "WebData.App.styles.css",
       "AssetKind": "All",
@@ -83,13 +83,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css"
+      "OriginalItemSpec": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\WebData.App.styles.css"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\WebData.App.bundle.scp.css",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\WebData.App.bundle.scp.css",
       "SourceId": "WebData.App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "WebData.App.bundle.scp.css",
       "AssetKind": "All",
@@ -102,13 +102,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\WebData.App.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\WebData.App.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\app.css",
       "SourceId": "WebData.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -124,10 +124,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "WebData.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "WebData.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -162,10 +162,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\favicon.png",
       "SourceId": "WebData.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -181,10 +181,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\index.html",
       "SourceId": "WebData.App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\zenox\\Documents\\GitHub\\WebDataBlazor\\WebData.App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\U731233\\OneDrive - voestalpine\\Programme\\WebDataBlazor\\WebData.App\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",

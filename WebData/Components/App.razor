@@ -1,4 +1,5 @@
 ﻿@using WebData.Objects.PageContext.Manager
+@using WebData.Objects.PageContext.Service
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,3 +22,22 @@
 
 </html>
 
+@inject AppBehaviorManager AppBehavior;
+
+@code{
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    public ApiService ApiService { get; set; }
+
+    [Inject]
+    public IDialogService DialogService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        AppBehavior.NavigationManager = NavigationManager;
+        AppBehavior.DialogService = DialogService;
+        AppBehavior.ApiService = ApiService; 
+    }
+}

@@ -11,7 +11,7 @@ namespace WebData.Objects.PageContext.Manager
     {
         public AufgabenListe AufgabenVerzeichnis { get; set; } = new AufgabenListe()
         {
-            new Aufgabe
+            new UserTasks
             {
                 Id = 1,
                 Name = "Loading",
@@ -22,7 +22,7 @@ namespace WebData.Objects.PageContext.Manager
 
         public async Task LoadData()
         {
-            AufgabenVerzeichnis = await APIService.GetAsync<AufgabenListe>("PersonalBacklog");
+            AufgabenVerzeichnis = await this.ApiService.PostAsync<AufgabenListe>("UserTasks/GetTasksForUser", AppBehavior.BenutzerVerwaltung.CurrentUser);
         }
 
     }

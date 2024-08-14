@@ -7,17 +7,17 @@
 
     <MudCard Style="width: 400px; padding: 20px;">
 
-        <MudTabs @bind-ActivePanelIndex="@activeTab" Rounded="true">
+        <MudTabs @bind-ActivePanelIndex="@AppBehavior.BenutzerVerwaltung.activeLoginRegisterTab" Rounded="true">
             <MudTabPanel Text="Login">
-                <MudForm Model="@loginModel" @ref="loginForm">
-                    <MudTextField Label="Email" @bind-Value="@loginModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
+                <MudForm Model="@AppBehavior.BenutzerVerwaltung.loginModel" @ref="@AppBehavior.BenutzerVerwaltung.loginForm">
+                    <MudTextField Label="Email" @bind-Value="@AppBehavior.BenutzerVerwaltung.loginModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
                                   Class="my-textfield" />
-                    <MudTextField Label="Password" @bind-Value="@loginModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" Immediate="true"
+                    <MudTextField Label="Password" @bind-Value="@AppBehavior.BenutzerVerwaltung.loginModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" Immediate="true"
                                   Class="my-textfield" />
-                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Login" Disabled="@isLoggingIn">Login</MudButton>
-                    @if (LoginAlert)
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@AppBehavior.BenutzerVerwaltung.Login" Disabled="@AppBehavior.BenutzerVerwaltung.isLoggingIn">Login</MudButton>
+                    @if (@AppBehavior.BenutzerVerwaltung.LoginAlert)
                     {
-                        @if (LoginSuccess)
+                        @if (@AppBehavior.BenutzerVerwaltung.LoginSuccess)
                         {
                             <MudAlert Severity="Severity.Success">Login-Success</MudAlert>
                         }
@@ -29,19 +29,19 @@
                 </MudForm>
             </MudTabPanel>
             <MudTabPanel Text="Register">
-                <MudForm Model="@registerModel" @ref="registerForm">
-                    <MudTextField Label="Name" @bind-Value="@registerModel.Name" Required="true" RequiredError="Name is required" Immediate="true"
+                <MudForm Model="@AppBehavior.BenutzerVerwaltung.registerModel" @ref="@AppBehavior.BenutzerVerwaltung.registerForm">
+                    <MudTextField Label="Name" @bind-Value="@AppBehavior.BenutzerVerwaltung.registerModel.Name" Required="true" RequiredError="Name is required" Immediate="true"
                                   Class="my-textfield" />
-                    <MudTextField Label="Email" @bind-Value="@registerModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
+                    <MudTextField Label="Email" @bind-Value="@AppBehavior.BenutzerVerwaltung.registerModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
                                   Class="my-textfield" />
-                    <MudTextField Label="Password" @bind-Value="@registerModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" Immediate="true"
+                    <MudTextField Label="Password" @bind-Value="@AppBehavior.BenutzerVerwaltung.registerModel.Password" InputType="InputType.Password" Required="true" RequiredError="Password is required" Immediate="true"
                                   Class="my-textfield" />
-                    <MudTextField Label="Confirm Password" @bind-Value="@registerModel.ConfirmPassword" InputType="InputType.Password" Required="true" RequiredError="Please confirm your password" Immediate="true"
+                    <MudTextField Label="Confirm Password" @bind-Value="@AppBehavior.BenutzerVerwaltung.registerModel.ConfirmPassword" InputType="InputType.Password" Required="true" RequiredError="Please confirm your password" Immediate="true"
                                   Class="my-textfield" />
-                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Register" Disabled="@isRegistering">Register</MudButton>
-                    @if (RegisterAlert)
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@AppBehavior.BenutzerVerwaltung.Register" Disabled="@AppBehavior.BenutzerVerwaltung.isRegistering">Register</MudButton>
+                    @if (@AppBehavior.BenutzerVerwaltung.RegisterAlert)
                     {
-                        @if (RegisterSuccess)
+                        @if (@AppBehavior.BenutzerVerwaltung.RegisterSuccess)
                         {
                             <MudAlert Severity="Severity.Success">Register-Success</MudAlert>
                         }
@@ -53,8 +53,6 @@
                 </MudForm>
             </MudTabPanel>
         </MudTabs>
-
-
     </MudCard>
 </MudPaper>
 <style>
@@ -92,7 +90,3 @@
         }
 
 </style>
-
-@code {
-
-}

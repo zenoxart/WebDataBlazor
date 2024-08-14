@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Components;
 using MudBlazor.Services;
 using WebData.Components;
+using WebData.Objects.PageContext.Manager;
 using WebData.Objects.PageContext.Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,9 +15,14 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddMudServices();
 
-builder.Services.AddHttpClient();
+//builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<HttpClient>();
 
 builder.Services.AddScoped<ApiService>();
+
+builder.Services.AddSingleton<AppBehaviorManager>();
+
 
 var app = builder.Build();
 

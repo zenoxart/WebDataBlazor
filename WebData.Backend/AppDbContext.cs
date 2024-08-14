@@ -8,7 +8,25 @@ namespace WebData.Backend
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         // Define your DbSets (tables) here
-        public DbSet<Aufgabe> PersonenAufgaben { get; set; }
-        public DbSet<BenutzerObject> User { get; set; }
+        public DbSet<UserTasks> UserTasks { get; set; }
+        public DbSet<UserObject> Users { get; set; }
+
+        public DbSet<ZugewieseneAufgabe> ZugewieseneAufgaben { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ZugewieseneAufgabe>()
+                .HasKey(ua => new { ua.UserId, ua.UserTaskId });
+
+            modelBuilder.Entity<ZugewieseneAufgabe>()
+                .HasOne(ua => ua.User)
+                .WithMany(u => u.UserAssignedTasks)
+                .HasForeignKey(ua => ua.UserId);
+
+            modelBuilder.Entity<ZugewieseneAufgabe>()
+                .HasOne(ua => ua.UserTask)
+                .WithMany(a => a.UserAssignedTasks)
+                .HasForeignKey(ua => ua.UserTaskId);
+        }
     }
 }

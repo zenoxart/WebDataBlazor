@@ -6,7 +6,7 @@
     </MudText>
     <div style="height: 153pt; overflow-y: auto;">
         <MudGrid Spacing="4" Justify="Justify.SpaceEvenly" Class="pt-4 pb-4">
-            @foreach (Aufgabe task in AppBehavior.Aufgaben.AufgabenVerzeichnis)
+            @foreach (UserTasks task in AppBehavior.Aufgaben.AufgabenVerzeichnis)
             {
                 Color choosen = Color.Default;
                 @if (task.Type == TaskType.Waiting)
@@ -42,5 +42,5 @@
 
 @code {
     [Parameter]
-    public AppManager AppBehavior { get; set; }
+    public AppBehaviorManager AppBehavior { get; set; }
 }
