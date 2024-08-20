@@ -11,6 +11,8 @@ namespace WebData.Backend
         public DbSet<UserTasks> UserTasks { get; set; }
         public DbSet<UserObject> Users { get; set; }
 
+        public DbSet<NewsObject> News { get; set; }
+
         public DbSet<ZugewieseneAufgabe> ZugewieseneAufgaben { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

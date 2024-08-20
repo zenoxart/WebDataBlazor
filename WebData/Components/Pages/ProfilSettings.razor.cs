@@ -8,9 +8,9 @@ namespace WebData.Components.Pages
     public partial class ProfilSettings
     {
         #region Injecte die Servies
+
         [Inject]
         public AppBehaviorManager AppBehavior { get; set; }
-
 
         #endregion
 

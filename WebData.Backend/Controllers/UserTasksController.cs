@@ -54,9 +54,9 @@ namespace WebData.Backend.Controllers
             }
 
             return await _context.ZugewieseneAufgaben
-           .Where(ua => ua.UserId == user.Id)
-           .Select(ua => ua.UserTask)
-           .ToListAsync();
+               .Where(ua => ua.UserId == user.Id)
+               .Select(ua => ua.UserTask)
+               .ToListAsync();
 
 
         }
@@ -115,7 +115,7 @@ namespace WebData.Backend.Controllers
             if (foundUser.Password != user.Password)
             {
                 return BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-                
+
             }
 
             // Überprüfen, ob die Aufgabe existiert
