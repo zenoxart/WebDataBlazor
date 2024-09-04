@@ -397,3 +397,6 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\obj\
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyModel.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData.App\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll

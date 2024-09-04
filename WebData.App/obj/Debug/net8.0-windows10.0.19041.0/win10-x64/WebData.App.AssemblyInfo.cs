@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebData.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0a2c5d82e6a0305ad804cc3c0c4c77505864d4f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+922ebaccaa248090eef2c40924879b4346014df9")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebData.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebData.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

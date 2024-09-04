@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebData.Backend.MonadFunc;
+using WebData.Objects.PageContext.CModel;
+using WebData.Objects.PageContext.Monad;
 using WebData.Objects.PageContext.Objs;
 
 namespace WebData.Backend.Controllers
@@ -8,102 +11,56 @@ namespace WebData.Backend.Controllers
     [Route("[controller]")]
     public class NewsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
-        private readonly ILogger<NewsController> _logger;
+        private readonly NewsMonadFuncs _newsMonadFuncs;
 
-        // Konstruktor für AufgabenController, initialisiert Logger und DbContext
         public NewsController(ILogger<NewsController> logger, ApplicationDbContext context)
         {
-            _logger = logger;
-            _context = context;
+            _newsMonadFuncs = new NewsMonadFuncs(context);
         }
 
-        // Gibt alle News zurück
         [HttpGet(Name = "GetAllNews")]
-        public async Task<List<NewsObject>> GetAllTasks(UserObject user)
+        public async Task<IActionResult> GetAllTasks(UserObject user)
         {
-            UserObject? foundUser = await _context.Users.FindAsync(user.Id);
-            if (foundUser == null)
-            {
-                BadRequest($"Benutzer mit der ID {user.Id} wurde nicht gefunden.");
-                return null;
-            }
-            if (foundUser.Password != user.Password && foundUser.Role != UserRoles.Moderator)
-            {
-                BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-                return null;
-            }
-
-            return await _context.News.ToListAsync();
+            return await _newsMonadFuncs.FindUser(user.Id)
+                .Bind(foundUser => Task.FromResult(_newsMonadFuncs.AuthenticateUser(foundUser, user.Password, UserRoles.Moderator)))
+                .Bind(_ => _newsMonadFuncs.GetAllNews())
+                .OnFailure(error => BadRequest(error))
+                .Map(result => Ok(result));
         }
 
-        // Legt einen neuen News-Artikel an
         [HttpPost("CreateNews", Name = "CreateNews")]
-        public async Task<IActionResult> CreateNews(UserObject user, NewsObject artikle)
+        public async Task<IActionResult> CreateNews(UserNewsRequest userNews)
         {
-            UserObject? foundUser = await _context.Users.FindAsync(user.Id);
-            if (foundUser == null)
-            {
-                return BadRequest($"Benutzer mit der ID {user.Id} wurde nicht gefunden.");
-            }
-            if (foundUser.Password != user.Password && foundUser.Role != UserRoles.Admin)
-            {
-                return BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-            }
-
-            await _context.News.AddAsync(artikle);
-            await _context.SaveChangesAsync();
-
-            return Ok("Newsartikel erfolgreich hinzugefügt.");
+            return await _newsMonadFuncs.FindUser(userNews.User.Id)
+                .Bind(foundUser => Task.FromResult(_newsMonadFuncs.AuthenticateUser(foundUser, userNews.User.Password, UserRoles.Admin)))
+                .Bind(_ => _newsMonadFuncs.AddNewsArticle(userNews.Artikle))
+                .OnFailure(error => BadRequest(error))
+                .Map(_ => Ok("Newsartikel erfolgreich hinzugefügt."));
         }
 
-        // Updated einen bestehenden News-Artikel
         [HttpPost("UpdateNews", Name = "UpdateNews")]
-        public async Task<IActionResult> UpdateNews(UserObject user, NewsObject artikle)
+        public async Task<IActionResult> UpdateNews(UserNewsRequest userNews)
         {
-            UserObject? foundUser = await _context.Users.FindAsync(user.Id);
-            if (foundUser == null)
-            {
-                return BadRequest($"Benutzer mit der ID {user.Id} wurde nicht gefunden.");
-            }
-            if (foundUser.Password != user.Password && (foundUser.Role != UserRoles.Admin || foundUser.Role != UserRoles.Moderator))
-            {
-                return BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-            }
-            if (_context.News.Find(artikle) == null)
-            {
-                return BadRequest("News-Artikel wurde nicht gefunden.");
-            }
-
-            _context.News.Update(artikle);
-            await _context.SaveChangesAsync();
-
-            return Ok("Newsartikel erfolgreich aktuallisiert.");
+            return await _newsMonadFuncs.FindUser(userNews.User.Id)
+                .Bind(foundUser => Task.FromResult(_newsMonadFuncs.AuthenticateUser(foundUser, userNews.User.Password, UserRoles.Moderator)))
+                .Bind(_ => _newsMonadFuncs.FindNewsArticle(userNews.Artikle.Id))
+                .Bind(existingArticle => _newsMonadFuncs.UpdateNewsArticle(existingArticle, userNews.Artikle))
+                .OnFailure(error => BadRequest(error))
+                .Map(_ => Ok("Newsartikel erfolgreich aktualisiert."));
         }
 
-        // Löscht einen bestehenden News-Artikel
         [HttpDelete("DeleteNews", Name = "DeleteNews")]
-        public async Task<IActionResult> DeleteNews(UserObject user, NewsObject artikle)
+        public async Task<IActionResult> DeleteNews(UserNewsRequest userNews)
         {
-            UserObject? foundUser = await _context.Users.FindAsync(user.Id);
-            if (foundUser == null)
-            {
-                return BadRequest($"Benutzer mit der ID {user.Id} wurde nicht gefunden.");
-            }
-            if (foundUser.Password != user.Password && (foundUser.Role != UserRoles.Admin || foundUser.Role != UserRoles.Moderator))
-            {
-                return BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-            }
-            if (_context.News.Find(artikle) == null)
-            {
-                return BadRequest("News-Artikel wurde nicht gefunden.");
-            }
-
-            _context.News.Remove(artikle);
-            await _context.SaveChangesAsync();
-
-            return Ok("Newsartikel erfolgreich aktuallisiert.");
+            return await _newsMonadFuncs.FindUser(userNews.User.Id)
+                .Bind(foundUser => Task.FromResult(_newsMonadFuncs.AuthenticateUser(foundUser, userNews.User.Password, UserRoles.Moderator)))
+                .Bind(_ => _newsMonadFuncs.FindNewsArticle(userNews.Artikle.Id))
+                .Bind(existingArticle => _newsMonadFuncs.DeleteNewsArticle(existingArticle))
+                .OnFailure(error => BadRequest(error))
+                .Map(_ => Ok("Newsartikel erfolgreich gelöscht."));
         }
-
     }
+
+
+
 }
