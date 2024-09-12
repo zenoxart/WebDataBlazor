@@ -1,10 +1,26 @@
-﻿<link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+﻿<!-- 
+    Definiert das Navigationsmenü
+    =======================================================
+-->
+
+<link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
 <MudNavMenu Color="Color.Primary" Bordered="true" Rounded="true" Margin="Margin.Dense">
+    <!-- Homepage -->
     <MudNavLink Href="" Match="NavLinkMatch.All" Icon="fas fa-chart-line">Dashboard</MudNavLink>
+
+    <!-- Server-Verwaltung -->
     <MudNavLink Href="/servers" Icon="fas fa-server">Servers</MudNavLink>
+
+    <!-- Zahlungs-Verwaltung -->
     <MudNavLink Href="/billing" Icon="fas fa-receipt" Disabled="true">Billing</MudNavLink>
+
+    <!-- Einstellungs-Verwaltung -->
     <MudNavGroup Title="Settings" Icon="fas fa-cogs" Expanded="true">
+
+        <!-- Benutzer-Verwaltung -->
         <MudNavLink Href="/users" Icon="fas fa-users" IconColor="Color.Success">Users</MudNavLink>
+
+        <!--Sicherheits-Verwaltung -->
         <MudNavLink Href="/security" Icon="fas fa-user-shield" IconColor="Color.Info">Security</MudNavLink>
     </MudNavGroup>
 </MudNavMenu>

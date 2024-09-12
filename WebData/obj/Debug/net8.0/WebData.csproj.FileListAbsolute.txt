@@ -102,13 +102,16 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debu
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\MudBlazor.dll
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\WebData.Common.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\WebData.Objects.dll
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\WebData.Common.pdb
@@ -118,6 +121,7 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debu
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.AssemblyInfoInputs.cache
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.AssemblyInfo.cs
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.csproj.CoreCompileInputs.cache
+C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.sourcelink.json
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\staticwebassets.build.json
@@ -134,7 +138,3 @@ C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debu
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.pdb
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.genruntimeconfig.cache
 C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\ref\WebData.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\Users\U731233\OneDrive - voestalpine\Programme\WebDataBlazor\WebData\obj\Debug\net8.0\WebData.MvcApplicationPartsAssemblyInfo.cs

@@ -1,13 +1,24 @@
 ﻿@using MudBlazor
 @using WebData.Objects.PageContext.Objs
+
 <MudCard Class="pa-4">
+
     <MudText Align="Align.Center" Typo="Typo.h5" Class="mb-4">@ChartData.Title</MudText>
-    <MudChart ChartType="ChartType.Line" LegendPosition="Position.Right" Height="350pt" ChartSeries="@ChartData.Series" XAxisLabels="@ChartData.XAxisLabels" ChartOptions="@ChartData.Options"></MudChart>
+
+    <MudChart 
+        ChartType="ChartType.Line"
+        LegendPosition="Position.Right" 
+        Height="350pt" 
+        ChartSeries="@ChartData.Series"
+        XAxisLabels="@ChartData.XAxisLabels" 
+        ChartOptions="@ChartData.Options">
+    </MudChart>
+
 </MudCard>
 @code {
 
     [Parameter]
-    public ChartObject ChartData { get; set; }
+    public TimelineChart ChartData { get; set; }
 
    
 }

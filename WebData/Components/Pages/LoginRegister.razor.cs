@@ -13,6 +13,9 @@ using WebData.Objects.PageContext.Utilities;
 
 namespace WebData.Components.Pages
 {
+    /// <summary>
+    /// Definiert die Anmelde & Benutzererstellungs - Seite
+    /// </summary>
     public partial class LoginRegister
     {
         #region Injecte die Servies
@@ -23,6 +26,10 @@ namespace WebData.Components.Pages
         public NavigationManager NavigationManager { get; set; }
 
         #endregion
+
+        /// <summary>
+        /// Triggert NACH dem das Initialisieren abgeschlossen ist sozusagen OnLoaded()
+        /// </summary>
         protected override Task OnInitializedAsync()
         {
             AppBehavior.BenutzerVerwaltung.AppBehavior.NavigationManager = NavigationManager;

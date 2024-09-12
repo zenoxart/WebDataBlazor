@@ -2,33 +2,27 @@
 @using WebData.Objects.PageContext.Manager
 @using WebData.Objects.PageContext.Objs
 <MudCard Class="pa-4">
+
     <MudText Align="Align.Center" Typo="Typo.h5" Class="mb-4">
         Personal Backlog
     </MudText>
+
     <div style="height: 153pt; overflow-y: auto;">
+
         <MudGrid Spacing="4" Justify="Justify.SpaceEvenly" Class="pt-4 pb-4">
             @foreach (UserTasks task in AppBehavior.Aufgaben.AufgabenVerzeichnis)
             {
-                Color choosen = Color.Default;
-                @if (task.Type == TaskType.Waiting)
+                Color choosen = task.Status switch
                 {
-                    choosen = Color.Inherit;
-                }
-                else if (task.Type == TaskType.Created)
-                {
-                    choosen = Color.Info;
-                }
-                else if (task.Type == TaskType.Working)
-                {
-                    choosen = Color.Warning;
-                }
-                else if (task.Type == TaskType.Finished)
-                {
-                    choosen = Color.Success;
-                }
+                    Objects.PageContext.Objs.TaskStatus.Waiting  => Color.Inherit,
+                    Objects.PageContext.Objs.TaskStatus.Created  => Color.Info,
+                    Objects.PageContext.Objs.TaskStatus.Working  => Color.Warning,
+                    Objects.PageContext.Objs.TaskStatus.Finished => Color.Success,
+                    _ => Color.Default
+                };
 
                 <MudItem>
-                    <MudBadge Content="@task.Type.ToString()" Color="@choosen" Overlap="true" Origin="Origin.TopCenter">
+                    <MudBadge Content="@task.Status.ToString()" Color="@choosen" Overlap="true" Origin="Origin.TopCenter">
                         <MudCard Class="pa-4" Style="min-width:200pt" Elevation="8">
 
                             <MudText Align="Align.Center" Typo="Typo.h6">@task.Name</MudText>
@@ -38,10 +32,13 @@
                 </MudItem>
             }
         </MudGrid>
+
     </div>
+
 </MudCard>
 
 @code {
     [Parameter]
     public AppBehaviorManager AppBehavior { get; set; }
+
 }

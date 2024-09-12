@@ -1,9 +1,10 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
-<MudPopoverProvider />
-<MudDialogProvider />
-<MudSnackbarProvider />
+<!--
+    Definiert ein Extra-Layout für die Login/Register-Seite
+    =======================================================
+-->
+
 
 <div class="login-page">
     <div class="login-container">
@@ -14,11 +15,26 @@
     </div>
 </div>
 
+<MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
 @code {
-    private bool _drawerOpen = true;
+
+    /// <summary>
+    /// Gibt an ob die Anwendung im Darkmode ist
+    /// </summary>
     private bool _isDarkMode = true;
+
+    /// <summary>
+    /// Beinhaltet alle Theme-Werte
+    /// </summary>
     private MudTheme? _theme = null;
 
+    /// <summary>
+    /// Initialisiert das Theme beim Laden des Layouts
+    /// </summary>
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -31,16 +47,17 @@
             };
     }
 
-    private void DrawerToggle()
-    {
-        _drawerOpen = !_drawerOpen;
-    }
-
+    /// <summary>
+    /// Ändert zwischen Darkmode & Lightmode
+    /// </summary>
     private void DarkModeToggle()
     {
         _isDarkMode = !_isDarkMode;
     }
 
+    /// <summary>
+    /// Definiert die Farbpalette für den Lightmode
+    /// </summary>
     private readonly PaletteLight _lightPalette = new()
         {
             Black = "#110e2d",
@@ -51,6 +68,9 @@
             GrayLighter = "#f9f9f9",
         };
 
+    /// <summary>
+    /// Definiert die Farbpalette für den Darkmode
+    /// </summary>
     private readonly PaletteDark _darkPalette = new()
         {
             Primary = "#569cd6",
@@ -76,12 +96,16 @@
             OverlayLight = "#1e1e1e80",
         };
 
+    /// <summary>
+    /// Definiert das Symbol für den Dark-Light-Mode Switch-Button
+    /// </summary>
     public string DarkLightModeButtonIcon => _isDarkMode switch
     {
         true => Icons.Material.Rounded.AutoMode,
         false => Icons.Material.Outlined.DarkMode,
     };
 }
+
 
 <style>
     .login-page, !.login-box {

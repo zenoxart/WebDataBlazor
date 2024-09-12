@@ -7,9 +7,15 @@ using WebData.Objects.PageContext.Objs;
 
 namespace WebData.Objects.PageContext.Manager
 {
+
+    /// <summary>
+    /// Definiert die clientseite Verwaltung der Zeitlinien-Diagramme
+    /// </summary>
     public class TimelineManager : BaseManager
     {
-
+        /// <summary>
+        /// Definiert die aktuelle Sammlung an Zeitlinien-Objekten
+        /// </summary>
         public TimelineList CurrentTimeline { get; set; } = new TimelineList()
         {
             new TimelineObject

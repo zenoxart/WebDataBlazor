@@ -4,24 +4,29 @@
 @using WebData.Objects.PageContext.Manager
 <MudCard Class="pa-4">
 
-
+    <!-- Aktivate Edit-Mode -->
     <MudBadge OnClick="ChangeEdit" Color="editPersonalDataColor" Content="@badgeTextEdit">
         <MudText Align="Align.Center" Typo="Typo.h5" Class="mb-4" Style="margin-right: 10px;">
             Personal Data
         </MudText>
     </MudBadge>
 
-
+    <!-- Formular -->
     <MudForm @ref="personalDataForm" @bind-IsValid="@editPersonalDataSuccess" @bind-Errors="@errors" Disabled="@editPersonalData">
+
         <MudTextField T="string" Label="Username" Required="true" RequiredError="User name is required!" Value="@AppBehavior.BenutzerVerwaltung.CurrentUser.Name" />
+
         <MudTextField T="string" Label="Email" Required="true" RequiredError="Email is required!"
                       Value="@AppBehavior.BenutzerVerwaltung.CurrentUser.Email"
                       Validation="@(new EmailAddressAttribute() {ErrorMessage = "The email address is invalid"})" />
+
         <MudTextField T="string" Label="Password" HelperText="Choose a strong password" @ref="password"
                       InputType="InputType.Password"
-                      Validation="@(new Func<string, IEnumerable<string>>(PasswordStrength))" Required="true"
+                      Validation="@(new Func<string, IEnumerable<string>>(Objects.PageContext.Utilities.EncryptionHandler.PasswordStrength))" Required="true"
                       RequiredError="Password is required!" />
+
         <MudButton ButtonType="ButtonType.Submit"> Save </MudButton>
+
     </MudForm>
 </MudCard>
 
@@ -30,42 +35,54 @@
     [Parameter]
     public AppBehaviorManager AppBehavior { get; set; }
 
-    string badgeTextEdit = "Edit";
-    Color editPersonalDataColor = Color.Default;
+    /// <summary>
+    /// Text-Feld für Edit-Mode
+    /// </summary>
+    private const string badgeTextEdit = "Edit";
+
+    /// <summary>
+    /// Färbung des Buttons für Edit-Mode
+    /// </summary>
+    private Color editPersonalDataColor = Color.Default;
+
+    /// <summary>
+    /// Ändert den Edit-Mode (an/aus)
+    /// </summary>
     private void ChangeEdit()
     {
         editPersonalData = !editPersonalData;
-        editPersonalDataColor = !editPersonalData ? Color.Error : Color.Default;
+        editPersonalDataColor = editPersonalData ? Color.Error : Color.Default;
     }
-    private bool _editPersonalData = true;
+
+    /// <summary>
+    /// Gibt an ob die persönlichen Daten editierbar sind
+    /// </summary>
     public bool editPersonalData { get; set; } = true;
+
+    /// <summary>
+    /// Gibt an ob die persönlichen Daten erfolgreich editiert wurden
+    /// </summary>
     bool editPersonalDataSuccess;
+
+    /// <summary>
+    /// Beinhaltet eine Liste an Fehler-Nachrichten
+    /// </summary>
     string[] errors = { };
+
+    /// <summary>
+    /// Definiert das Text-Feld für das Passwort
+    /// </summary>
     MudTextField<string> password;
+
+    /// <summary>
+    /// Definiert das Formular für die Benutzerinformationen
+    /// </summary>
     MudForm personalDataForm;
 
-    private IEnumerable<string> PasswordStrength(string pw)
-    {
-        if (string.IsNullOrWhiteSpace(pw))
-        {
-            yield return "Password is required!";
-            yield break;
-        }
-        if (pw.Length < 16)
-            yield return "Password must be at least of length 16";
-        if (!Regex.IsMatch(pw, @"[A-Z]"))
-            yield return "Password must contain at least one capital letter";
-        if (!Regex.IsMatch(pw, @"[a-z]"))
-            yield return "Password must contain at least one lowercase letter";
-        if (!Regex.IsMatch(pw, @"[0-9]"))
-            yield return "Password must contain at least one digit";
-    }
-
-    private string PasswordMatch(string arg)
-    {
-        if (password.Value != arg)
-            return "Passwords don't match";
-        return null;
-    }
+    /// <summary>
+    /// Überprüft ob die beiden Passwörter übereinstimmen
+    /// </summary>
+    private string PasswordMatch(string arg) 
+    => password.Value != arg ? "Passwords don't match" : null;
 
 }

@@ -4,43 +4,27 @@ using WebData.Objects.PageContext.Objs;
 
 namespace WebData.Backend.MonadFunc
 {
-    public class NewsMonadFuncs
+    /// <summary>
+    /// Kapselt alle Monad (Wrapper) -Funktionen die beim Verwalten von Nachrichten benötigt werden 
+    /// </summary>
+    internal class NewsMonadFuncs : CommonMonadFuncs
     {
-        private readonly ApplicationDbContext _context;
-
-        public NewsMonadFuncs(ApplicationDbContext context)
+        public NewsMonadFuncs(ApplicationDbContext context) : base(context)
         {
-            _context = context;
         }
 
-        public async Task<Result<UserObject>> FindUser(int userId)
-        {
-            if (_context.Users != null)
-            {
-                UserObject foundUser = await _context.Users.FindAsync(userId);
-
-                if (foundUser != null)
-                    return Result<UserObject>.Success(foundUser);
-            }
-
-            return Result<UserObject>.Failure($"Benutzer mit der ID {userId} wurde nicht gefunden.");
-
-        }
-
-        public Result<UserObject> AuthenticateUser(UserObject foundUser, string? password, UserRoles necessaryRole)
-        {
-            if (!(string.IsNullOrEmpty(password) && string.IsNullOrWhiteSpace(password)) && foundUser.Password != password && foundUser.Role != necessaryRole)
-                return Result<UserObject>.Failure("Benutzerauthentifizierung fehlgeschlagen.");
-
-            return Result<UserObject>.Success(foundUser);
-        }
-
+        /// <summary>
+        /// Läd alle Nachrichten
+        /// </summary>
         public async Task<Result<List<NewsObject>>> GetAllNews()
         {
             var newsList = await _context.News.ToListAsync();
             return Result<List<NewsObject>>.Success(newsList);
         }
 
+        /// <summary>
+        /// Erstellt einen neuen Nachrichten-Artikel
+        /// </summary>
         public async Task<Result<NewsObject>> AddNewsArticle(NewsObject article)
         {
             await _context.News.AddAsync(article);
@@ -48,17 +32,20 @@ namespace WebData.Backend.MonadFunc
             return Result<NewsObject>.Success(article);
         }
 
+        /// <summary>
+        /// Sucht nach einem bestehenden Nachrichten-Artikel
+        /// </summary>
         public async Task<Result<NewsObject>> FindNewsArticle(int articleId)
         {
             var article = await _context.News.FindAsync(articleId);
-            if (article == null)
-            {
-                return Result<NewsObject>.Failure("News-Artikel wurde nicht gefunden.");
-            }
-
-            return Result<NewsObject>.Success(article);
+            return article == null 
+                ? Result<NewsObject>.Failure("News-Artikel wurde nicht gefunden.") 
+                : Result<NewsObject>.Success(article);
         }
 
+        /// <summary>
+        /// Aktualisiert einen bestehenden Nachrichten-Artikel
+        /// </summary>
         public async Task<Result<NewsObject>> UpdateNewsArticle(NewsObject existingArticle, NewsObject updatedArticle)
         {
             _context.Entry(existingArticle).CurrentValues.SetValues(updatedArticle);
@@ -66,6 +53,9 @@ namespace WebData.Backend.MonadFunc
             return Result<NewsObject>.Success(existingArticle);
         }
 
+        /// <summary>
+        /// Löscht einen bestehenden Nachrichten-Artikel
+        /// </summary>
         public async Task<Result<NewsObject>> DeleteNewsArticle(NewsObject article)
         {
             _context.News.Remove(article);

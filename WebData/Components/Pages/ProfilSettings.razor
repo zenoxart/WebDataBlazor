@@ -1,25 +1,22 @@
-﻿@using System.Text.RegularExpressions
-@using System.ComponentModel.DataAnnotations
-@using WebData.Objects.PageContext.Objs
-
-@page "/userprofile"
+﻿@page "/userprofile"
 
 
 <MudGrid Spacing="4">
 
-    <!-- Offene Punkte -->
+    <!-- Aufgaben-Backlog -->
     <MudItem lg="4" md="6" sm="12">
         <WebData.Common.Controls.BacklogList AppBehavior="@AppBehavior" />
     </MudItem>
 
+    <!-- Benutzerinformationen -->
     <MudItem lg="8" md="6" sm="12">
         <WebData.Common.Controls.PersonalDataForm AppBehavior="@AppBehavior" />
     </MudItem>
 
+    <!-- Benutzeraktivitäten -->
     <MudItem lg="12" md="12" sm="12" >
         <WebData.Common.Controls.LineChart ChartData="@AppBehavior.BenutzerVerwaltung.PersonalActivities" />
     </MudItem>
-
 
 </MudGrid>
 @code {

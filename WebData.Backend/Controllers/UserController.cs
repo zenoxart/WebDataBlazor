@@ -6,212 +6,112 @@ using System.Collections.Generic;
 using System.Linq;
 using WebData.Objects.PageContext.Utilities;
 using WebData.Objects.PageContext.CModel;
+using WebData.Backend.MonadFunc;
+using WebData.Objects.PageContext.Monad;
 
 namespace WebData.Backend.Controllers
 {
+    /// <summary>
+    /// API-Controller zum Verwalten von Benutzerinformationen
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
         private readonly ILogger<UserController> _logger;
 
-        // Konstruktor für UserController, initialisiert Logger und DbContext
+        private readonly UserMonadFuncs _userMonadFuncs;
+
+        /// <summary>
+        /// Konstruktor für UserController, initialisiert Logger und DbContext
+        /// </summary>
         public UserController(ILogger<UserController> logger, ApplicationDbContext context)
         {
+            _userMonadFuncs = new UserMonadFuncs(context);
             _logger = logger;
-            _context = context;
         }
 
-        // Gibt alle Benutzer zurück
+        /// <summary>
+        /// Gibt alle Benutzer zurück
+        /// </summary>
         [HttpGet(Name = "GetAllUsers")]
-        public async Task<List<UserObject>> GetAllUsers( UserObject admin)
-        {
-            UserObject? foundUser = await _context.Users.FindAsync(admin.Id);
+        public async Task<IActionResult> GetAllUsers(UserObject admin)
+            => await _userMonadFuncs.FindUser(admin.Id)
+               .Bind(foundUser => Task.FromResult(_userMonadFuncs.AuthenticateUser(foundUser, admin.Password, UserRoles.Admin)))
+               .Bind(_ => _userMonadFuncs.GetAllUsers())
+               .OnFailure(error => BadRequest(error))
+               .Map(result => Ok(result));
 
-            if (foundUser == null)
-            {
-                NotFound($"Benutzer mit der ID {admin.Id} wurde nicht gefunden.");
-
-                return null;
-            }
-            if (foundUser.Password != admin.Password)
-            {
-                BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-                return null;
-
-            }
-            return await _context.Users.ToListAsync();
-        }
-
-        // Aktualisiert einen Benutzer oder erstellt einen neuen, wenn er nicht existiert
+        /// <summary>
+        /// Aktualisiert einen Benutzer oder erstellt einen neuen, wenn er nicht existiert
+        /// </summary>
         [HttpPost("UpdateUser", Name = "UpdateUser")]
-        public async Task<IActionResult> UpdateUser( UserObject user)
-        {
-            // Benutzer anhand der ID suchen
-            UserObject? foundUser = await _context.Users.FindAsync(user.Id);
+        public async Task<IActionResult> UpdateUser(UserObject user)
+            => await _userMonadFuncs.FindUser(user.Id)
+               .Bind(foundUser => Task.FromResult(_userMonadFuncs.AuthenticateUser(foundUser, user.Password, UserRoles.Moderator)))
+               .Bind(foundUser => _userMonadFuncs.UpdateUser(foundUser, user))
+               .OnFailure(error => BadRequest(error))
+               .Map(_ => Ok("Benutzer erfolgreich aktualisiert."));
 
-            if (foundUser != null)
-            {
-                // Felder aktualisieren, wenn sie sich geändert haben
-                foundUser.Name = user.Name != foundUser.Name ? user.Name : foundUser.Name;
-                foundUser.Email = user.Email != foundUser.Email ? user.Email : foundUser.Email;
-
-                _context.Users.Update(foundUser);
-                await _context.SaveChangesAsync();
-                return Ok(true);
-            }
-            else
-            {
-                // Benutzer hinzufügen, wenn er nicht existiert
-                await _context.Users.AddAsync(user);
-                await _context.SaveChangesAsync();
-                return Ok(true);
-            }
-        }
-
-        // Löscht einen Benutzer, wenn er existiert
+        /// <summary>
+        /// Löscht einen Benutzer, wenn er existiert
+        /// </summary>
         [HttpDelete("DeleteUser", Name = "DeleteUser")]
-        public async Task<IActionResult> DeleteUser( UserObject user)
-        {
-            // Benutzer anhand der ID suchen
-            UserObject? foundUser = await _context.Users.FindAsync(user.Id);
+        public async Task<IActionResult> DeleteUser(UserObject user)
+            => await _userMonadFuncs.FindUser(user.Id)
+               .Bind(foundUser => Task.FromResult(_userMonadFuncs.AuthenticateUser(foundUser, user.Password, UserRoles.Moderator)))
+               .Bind(foundUser => _userMonadFuncs.DeleteUser(foundUser))
+               .OnFailure(error => BadRequest(error))
+               .Map(_ => Ok("Benutzer erfolgreich gelöscht."));
 
-            if (foundUser.Password != user.Password)
-            {
-                return BadRequest("Benutzerauthentifizierung fehlgeschlagen.");
-                
-
-            }
-            if (foundUser != null)
-            {
-                // Benutzer löschen
-                _context.Users.Remove(foundUser);
-                await _context.SaveChangesAsync();
-                return Ok(true);
-            }
-            else
-            {
-                return NotFound(false);
-            }
-        }
-
-        // Registriert einen neuen Benutzer, wenn die E-Mail nicht bereits existiert
+        /// <summary>
+        /// Registriert einen neuen Benutzer, wenn die E-Mail nicht bereits existiert
+        /// </summary>
         [HttpPost("RegisterUser", Name = "RegisterUser")]
-        public async Task<bool> Register( UserObject user)
-        {
-            if (_context.Users != null)
-            {
-                // Überprüfen, ob die E-Mail bereits existiert
-                UserObject? foundUser = _context.Users.FirstOrDefault(x => x.Email == user.Email);
-                if (foundUser == null)
-                {
-                    // Neuen Benutzer erstellen und speichern
-                    var userEntity = new UserObject
-                    {
-                        Name = user.Name,
-                        Email = user.Email,
-                        Password = user.Password,
-                        PasswordIV = user.PasswordIV,
-                        Role = UserRoles.Default
-                    };
-                    await _context.Users.AddAsync(userEntity);
-                    await _context.SaveChangesAsync();
+        public async Task<bool> Register(UserObject user)
+            => await _userMonadFuncs.DontFindUser(user.Id)
+               .Bind(_ => _userMonadFuncs.RegisterUser(user))
+               .OnFailure(error => BadRequest(error))
+               .Map(_ => Ok("Benutzer erfolgreich registriert.")) != null;
 
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        // Führt den Benutzerlogin durch, wenn die E-Mail und das Passwort übereinstimmen
+        /// <summary>
+        /// Führt den Benutzerlogin durch, wenn die E-Mail und das Passwort übereinstimmen
+        /// </summary>
         [HttpPost("LoginUser", Name = "LoginUser")]
-        public async Task<UserObject> Login(UserObject user)
-        {
-            // Benutzer anhand der E-Mail suchen
-            UserObject? foundUser = _context.Users.FirstOrDefault(x => x.Email == user.Email);
+        public async Task<IActionResult> Login(UserObject user)
+            => await _userMonadFuncs.FindUser(user.Id)
+               .Bind(foundUser => Task.FromResult(_userMonadFuncs.AuthenticateUser(foundUser, user.Password, UserRoles.Default)))
+               .OnFailure(error => BadRequest(error))
+               .Map(_ => Ok("Benutzer erfolgreich angemeldet."));
 
-            if (foundUser != null)
-            {
-                // Passwort überprüfen
-                if (user.Password == foundUser.Password)
-                {
-                    // Benutzerinformationen zurückgeben, wenn das Passwort stimmt
-                    return new UserObject()
-                    {
-                        Id = foundUser.Id,
-                        Name = foundUser.Name,
-                        Email = foundUser.Email,
-                        Role = foundUser.Role
-                    };
-                }
-            }
-
-            // Null zurückgeben, wenn der Benutzer nicht gefunden wurde oder das Passwort falsch ist
-            return null;
-        }
-
-        // Gibt die Initialisierungsvektordaten eines Benutzers zurück, wenn die E-Mail übereinstimmt
+        /// <summary>
+        /// Gibt die Initialisierungsvektordaten eines Benutzers zurück, wenn die E-Mail übereinstimmt
+        /// </summary>
         [HttpPost("GetUserIV", Name = "GetUserIV")]
-        public async Task<UserObject> GetUserIV(UserObject user)
-        {
-            // Benutzer anhand der E-Mail suchen
-            UserObject? foundUser = _context.Users.FirstOrDefault(x => x.Email == user.Email);
+        public async Task<IActionResult> GetUserIV(UserObject user)
+            => await _userMonadFuncs.FindUserViaMail(user.Email)
+               .OnFailure(error => BadRequest(error))
+               .Map(_ => Ok("Benutzer erfolgreich angemeldet."));
 
-            if (foundUser != null)
-            {
-                // Benutzerinformationen einschließlich des IV zurückgeben
-                var newUser = new UserObject()
-                {
-                    Email = foundUser.Email,
-                    PasswordIV = foundUser.PasswordIV,
-                    Name = foundUser.Name,
-                    Id = foundUser.Id
-                };
-                // Hier könnte ein JWT oder ein Session-Token generiert und zurückgegeben werden
-                return newUser;
-            }
-
-            // Null zurückgeben, wenn der Benutzer nicht gefunden wurde
-            return null;
-        }
-        
-
+        /// <summary>
+        /// Aktualisiert die Benutzerrolle eines Benutzers
+        /// </summary>
+        /// <param name="users">Es muss ein Admin-Account & ein Normaler Benutzer angegeben werden</param>
         [HttpPost("UpdateUserRole", Name = "UpdateUserRole")]
         public async Task<IActionResult> UpdateUserRole(UpdateUserRoleRequest users)
         {
-            // Überprüfen, ob der Admin-Benutzer existiert
-            UserObject? foundAdminUser = await _context.Users.FindAsync(users.AdminUser.Id);
-            if (foundAdminUser == null)
+            var adminFound = (await _userMonadFuncs.FindUser(users.AdminUser.Id)
+              .Bind(foundAdmin => Task.FromResult(_userMonadFuncs.AuthenticateUser(foundAdmin, users.AdminUser.Password, necessaryRole: UserRoles.Admin))));
+
+            if (adminFound != null)
             {
-                return NotFound("Admin-Benutzer nicht gefunden.");
+                return await _userMonadFuncs.FindUser(users.ChangedUser.Id)
+                   .Bind(foundUser => _userMonadFuncs.UpdateUserRole(foundUser, users.ChangedUser.Role))
+                   .OnFailure(error => BadRequest(error))
+                   .Map(_ => Ok("Benutzerrolle wurde erfolgreich aktualisiert."));
             }
 
-            // Überprüfen, ob der Admin-Benutzer die notwendigen Berechtigungen hat
-            if (foundAdminUser.Role != UserRoles.Admin && foundAdminUser.Password != users.AdminUser.Password)
-            {
-                return Forbid("Nur Administratoren können Benutzerrollen aktualisieren.");
-            }
-
-            // Überprüfen, ob der zu ändernde Benutzer existiert
-            UserObject? foundChangedUser = await _context.Users.FindAsync(users.ChangedUser.Id);
-            if (foundChangedUser == null)
-            {
-                return NotFound("Zu ändernder Benutzer nicht gefunden.");
-            }
-
-            // Aktualisieren der Benutzerrolle
-            foundChangedUser.Role = users.ChangedUser.Role;
-
-            // Änderungen speichern
-            _context.Users.Update(foundChangedUser);
-            await _context.SaveChangesAsync();
-
-            return Ok("Benutzerrolle erfolgreich aktualisiert.");
-
-
+            return new BadRequestObjectResult("Adminrechte konnten nicht verifiziert werden.");
         }
-
     }
 }

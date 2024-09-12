@@ -9,36 +9,70 @@ using WebData.Objects.PageContext.Service;
 
 namespace WebData.Objects.PageContext.Manager
 {
-    public interface IAppBehavior
+    /// <summary>
+    /// Das IAppManager-Interface definiert, dass jeder Manager diese Komponenten implementieren muss 
+    /// um in der Client-Factory-Appkontext-Infrastruktur produziert werden zu können
+    /// </summary>
+    public interface IAppManager
     {
+        /// <summary>
+        /// Referenz zur Root-Instanz der Client-Factory-Appkontext-Infrastruktur 
+        /// </summary>
         public AppBehaviorManager AppBehavior { get; set; }
 
+        /// <summary>
+        /// Referenz zum REST-API-Kommunikations-Manager
+        /// </summary>
         public ApiService ApiService { get; set; }
 
+        /// <summary>
+        /// Regerenz zum Dialog-Manager
+        /// </summary>
         public IDialogService DialogService { get; set; }
-
+        /// <summary>
+        /// Referenz zum Navigations-Manager
+        /// </summary>
         public NavigationManager NavigationManager { get; set; }
     }
+
+    /// <summary>
+    /// Die AppBehavior definiert eine Client-Factory-Appkontext-Infrastruktur 
+    /// um managerübergreifen Zugriff der selben Instanz zu ermöglichen
+    /// </summary>
     public class AppBehaviorManager
     {
-        //[Inject]
+        /// <summary>
+        /// Definiert den Service fürs Navigations-Verhalten
+        /// </summary>
         public NavigationManager NavigationManager { get; set; }
 
-        //[Inject]
+        /// <summary>
+        /// Definiert den Service zur REST-API
+        /// </summary>
         public ApiService ApiService { get; set; }
 
-        //[Inject]
+        /// <summary>
+        /// Definiert den Service zum Abhandeln von Pop-Up-Dialogen
+        /// </summary>
         public IDialogService DialogService { get; set; }
 
-        public virtual T Produziere<T>() where T : IAppBehavior, new()
+        /// <summary>
+        /// Erstellt einen neuen Manager mit Referenz zum Root der AppBehavior
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public virtual T Produziere<T>() where T : IAppManager, new()
         {
-            var NeuesObjekt = new T();
+            var NeuesObjekt = new T
+            {
+                // Die Infrastruktur im neuen Objekt einstellen
+                AppBehavior = this,
 
-            // Die Infrastruktur im neuen Objekt einstellen
-            NeuesObjekt.AppBehavior = this;
-            NeuesObjekt.ApiService = ApiService;
-            NeuesObjekt.DialogService = DialogService;
-            NeuesObjekt.NavigationManager = NavigationManager;
+                // Die Services übergeben
+                ApiService = ApiService,
+                DialogService = DialogService,
+                NavigationManager = NavigationManager
+            };
 
             // Im Ausgabefenster vom Studio
             // einen Produktionshinweis hinterlassen
@@ -60,10 +94,8 @@ namespace WebData.Objects.PageContext.Manager
         {
             get
             {
-                if (_timeline == null)
-                {
-                    _timeline = this.Produziere<TimelineManager>();
-                }
+                _timeline ??= this.Produziere<TimelineManager>();
+
                 return _timeline;
             }
             set { _timeline = value; }
@@ -81,10 +113,8 @@ namespace WebData.Objects.PageContext.Manager
         {
             get
             {
-                if (_news == null)
-                {
-                    _news = this.Produziere<NewsManager>();
-                }
+                _news ??= this.Produziere<NewsManager>();
+
                 return _news;
             }
             set { _news = value; }
@@ -102,10 +132,8 @@ namespace WebData.Objects.PageContext.Manager
         {
             get
             {
-                if (_aufgaben == null)
-                {
-                    _aufgaben = this.Produziere<AufgabenManager>();
-                }
+                _aufgaben ??= this.Produziere<AufgabenManager>();
+
                 return _aufgaben;
             }
             set { _aufgaben = value; }
@@ -123,10 +151,8 @@ namespace WebData.Objects.PageContext.Manager
         {
             get
             {
-                if (_benutzerVerwaltung == null)
-                {
-                    _benutzerVerwaltung = this.Produziere<BenutzerManager>();
-                }
+                _benutzerVerwaltung ??= this.Produziere<BenutzerManager>();
+
                 return _benutzerVerwaltung;
             }
             set { _benutzerVerwaltung = value; }

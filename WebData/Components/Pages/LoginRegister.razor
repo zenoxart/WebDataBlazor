@@ -1,13 +1,12 @@
 ﻿@page "/login"
 @layout LoginLayout
-@using System.ComponentModel.DataAnnotations
-@using WebData.Components.Layout
 
 <MudPaper Class="d-flex justify-center align-center" Style="height: 100vh;">
 
     <MudCard Style="width: 400px; padding: 20px;">
 
         <MudTabs @bind-ActivePanelIndex="@AppBehavior.BenutzerVerwaltung.activeLoginRegisterTab" Rounded="true">
+            <!-- Login-Panel -->
             <MudTabPanel Text="Login">
                 <MudForm Model="@AppBehavior.BenutzerVerwaltung.loginModel" @ref="@AppBehavior.BenutzerVerwaltung.loginForm">
                     <MudTextField Label="Email" @bind-Value="@AppBehavior.BenutzerVerwaltung.loginModel.Email" Required="true" RequiredError="Email is required" Immediate="true"
@@ -28,6 +27,8 @@
                     }
                 </MudForm>
             </MudTabPanel>
+
+            <!-- Register-Panel -->
             <MudTabPanel Text="Register">
                 <MudForm Model="@AppBehavior.BenutzerVerwaltung.registerModel" @ref="@AppBehavior.BenutzerVerwaltung.registerForm">
                     <MudTextField Label="Name" @bind-Value="@AppBehavior.BenutzerVerwaltung.registerModel.Name" Required="true" RequiredError="Name is required" Immediate="true"
@@ -39,6 +40,7 @@
                     <MudTextField Label="Confirm Password" @bind-Value="@AppBehavior.BenutzerVerwaltung.registerModel.ConfirmPassword" InputType="InputType.Password" Required="true" RequiredError="Please confirm your password" Immediate="true"
                                   Class="my-textfield" />
                     <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@AppBehavior.BenutzerVerwaltung.Register" Disabled="@AppBehavior.BenutzerVerwaltung.isRegistering">Register</MudButton>
+                    
                     @if (@AppBehavior.BenutzerVerwaltung.RegisterAlert)
                     {
                         @if (@AppBehavior.BenutzerVerwaltung.RegisterSuccess)
@@ -55,6 +57,7 @@
         </MudTabs>
     </MudCard>
 </MudPaper>
+
 <style>
     /* General autofill styling */
     input:-webkit-autofill,

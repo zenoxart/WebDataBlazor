@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Components;
 
 namespace WebData.Components.Pages
 {
+    /// <summary>
+    /// Definiert die Home-Landing-Page / Haupt-Dashboard - Seite
+    /// </summary>
     public partial class Home
     {
         #region Injecte die Servies

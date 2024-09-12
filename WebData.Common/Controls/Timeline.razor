@@ -1,6 +1,7 @@
 ﻿@using MudBlazor
 @using WebData.Objects
 @using WebData.Objects.PageContext.Objs
+
 <MudCard Height="250pt">
     <MudTimeline TimelineOrientation="_orientation" TimelinePosition="_position">
 
@@ -19,23 +20,42 @@
     </MudTimeline>
 </MudCard>
 @code {
+
+    /// <summary>
+    /// Gibt die Position der Timeline an
+    /// </summary>
     private TimelinePosition _position { get; set; } = TimelinePosition.Start;
+
+    /// <summary>
+    /// Gibt die Orientierung der Timeline an
+    /// </summary>
     private TimelineOrientation _orientation { get; set; } = TimelineOrientation.Vertical;
 
+    /// <summary>
+    /// Ändert die Orientierung der Timeline
+    /// </summary>
     private void OnOrientationChange(TimelineOrientation value)
     {
         _orientation = value;
-        switch (value)
+
+        _position = value switch
         {
-            case TimelineOrientation.Vertical:
-                if (_position is TimelinePosition.Top or TimelinePosition.Bottom)
-                    _position = TimelinePosition.Start;
-                break;
-            case TimelineOrientation.Horizontal:
-                if (_position is TimelinePosition.Start or TimelinePosition.Left or TimelinePosition.Right or TimelinePosition.End)
-                    _position = TimelinePosition.Top;
-                break;
-        }
+            TimelineOrientation.Vertical => _position switch
+            {
+                TimelinePosition.Top    => TimelinePosition.Start,
+                TimelinePosition.Bottom => TimelinePosition.Start,
+                _ => _position
+            },
+            TimelineOrientation.Horizontal => _position switch
+            {
+                TimelinePosition.Start  => TimelinePosition.Top,
+                TimelinePosition.Left   => TimelinePosition.Top,
+                TimelinePosition.Right  => TimelinePosition.Top,
+                TimelinePosition.End    => TimelinePosition.Top,
+                _ => _position
+            },
+            _ => _position
+        };
     }
 
     [Parameter]

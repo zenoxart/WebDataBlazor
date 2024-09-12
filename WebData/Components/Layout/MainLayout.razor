@@ -1,12 +1,15 @@
 ﻿@using WebData.Objects.PageContext.Manager
 @using WebData.Objects.PageContext.Service
 @inherits LayoutComponentBase
-
+<!--
+    Definiert das Standard-Layout für die Login/Register-Seite
+    =======================================================
+-->
 <MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
-<MudLayout >
+<MudLayout>
     <MudAppBar Elevation="1">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
@@ -42,11 +45,26 @@
 </div>
 
 @code {
+
+
+    /// <summary>
+    /// Gibt an ob das Nav-Menu eingeblendet ist
+    /// </summary>
     private bool _drawerOpen = true;
+
+    /// <summary>
+    /// Gibt an ob die Anwendung im Darkmode ist
+    /// </summary>
     private bool _isDarkMode = true;
+
+    /// <summary>
+    /// Beinhaltet alle Theme-Werte
+    /// </summary>
     private MudTheme? _theme = null;
 
-    private string hiddenBar = "visibility: hidden";
+    /// <summary>
+    /// Initialisiert das Theme beim Laden des Layouts
+    /// </summary>
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -58,20 +76,27 @@
                 LayoutProperties = new LayoutProperties()
             };
 
-       
+
     }
 
-
+    /// <summary>
+    /// Ändert ob das Nav-Menu ein oder Ausgeblendet ist
+    /// </summary>
     private void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
     }
 
+    /// <summary>
+    /// Ändert zwischen Darkmode & Lightmode
+    /// </summary>
     private void DarkModeToggle()
     {
         _isDarkMode = !_isDarkMode;
     }
-
+    /// <summary>
+    /// Definiert die Farbpalette für den Lightmode
+    /// </summary>
     private readonly PaletteLight _lightPalette = new()
         {
             Black = "#110e2d",
@@ -82,6 +107,9 @@
             GrayLighter = "#f9f9f9",
         };
 
+    /// <summary>
+    /// Definiert die Farbpalette für den Darkmode
+    /// </summary>
     private readonly PaletteDark _darkPalette = new()
         {
             Primary = "#569cd6", // A blue color used in Visual Studio for keywords
@@ -111,14 +139,14 @@
             OverlayLight = "#1e1e1e80", // Overlay with transparency for modals or dialogs
         };
 
-
+    /// <summary>
+    /// Definiert das Symbol für den Dark-Light-Mode Switch-Button
+    /// </summary>
     public string DarkLightModeButtonIcon => _isDarkMode switch
     {
         true => Icons.Material.Rounded.AutoMode,
         false => Icons.Material.Outlined.DarkMode,
     };
-
-
-    }
+}
 
 

@@ -1,8 +1,12 @@
 ﻿@using MudBlazor
 <MudCard Class="pa-4">
+    
     <MudChart ChartType="ChartType.Pie" InputData="@data" @bind-SelectedIndex="Index" InputLabels="@labels" Width="300px" Height="300px" />
+
 </MudCard>
+
 <MudText Typo="Typo.h6">Selected portion of the chart: @Index</MudText>
+
 @code {
     private int Index = -1; //default value cannot be 0 -> first selectedindex is 0.
     int dataSize = 4;

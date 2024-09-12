@@ -5,6 +5,10 @@ using WebData.Objects.PageContext.Service;
 
 namespace WebData.Components.Pages
 {
+
+    /// <summary>
+    /// Definiert die Benutzereinstellungen - Seite
+    /// </summary>
     public partial class ProfilSettings
     {
         #region Injecte die Servies

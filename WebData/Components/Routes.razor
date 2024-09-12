@@ -1,4 +1,10 @@
-﻿<Router AppAssembly="typeof(Program).Assembly">
+﻿<!--
+    Definiert wie die Routen der unterschiedlichen Seiten aufgelöst wird
+    ====================================================================
+    Wenn im Kontext eine routeData gefunden wurde wird dies zur RouteView und zum FocusOnNaviate gemapped
+-->
+
+<Router AppAssembly="typeof(Program).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
         <FocusOnNavigate RouteData="routeData" Selector="h1" />

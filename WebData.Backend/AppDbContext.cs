@@ -3,18 +3,39 @@ using WebData.Objects.PageContext.Objs;
 
 namespace WebData.Backend
 {
+    /// <summary>
+    /// Definiert die Datenbank-Infrastruktur des Entity-Frameworks
+    /// </summary>
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        // Define your DbSets (tables) here
+        /// <summary>
+        /// Definiert eine Datenbank-Sammlung an Benutzeraufgaben
+        /// </summary>
         public DbSet<UserTasks> UserTasks { get; set; }
+
+        /// <summary>
+        /// Definiert eine Datenbank-Sammlung an Benutzern
+        /// </summary>
         public DbSet<UserObject> Users { get; set; }
 
+        /// <summary>
+        /// Definiert eine Datenbank-Sammlung an Nachrichten
+        /// </summary>
         public DbSet<NewsObject> News { get; set; }
 
+        /// <summary>
+        /// Definiert eine Datenbank-Sammlung n:m an Zugewießenen Aufgaben 
+        /// </summary>
+        /// <remarks>
+        /// Welchem Benutzer welche Aufgaben zugewießen wurden
+        /// </remarks>
         public DbSet<ZugewieseneAufgabe> ZugewieseneAufgaben { get; set; }
 
+        /// <summary>
+        /// Wenn das Model erstellt wird, werden hier die Tabellen-Verbindungen zugewießen
+        /// </summary>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ZugewieseneAufgabe>()

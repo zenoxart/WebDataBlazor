@@ -6,39 +6,43 @@ using WebData.Objects.PageContext.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add MudBlazor services
+// Fügt die Mud-Blazor UI-Komponenten hinzu
 builder.Services.AddMudServices();
 
-// Add services to the container.
+// Fügt Razor-Pages hinzu
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddMudServices();
-
-//builder.Services.AddHttpClient();
-
+// Fügt als Singelton einen Http/Https-Client hinzu
 builder.Services.AddSingleton<HttpClient>();
 
+// Fügt als Scoped-Serivce die REST-API-Kommunikation hinzu
 builder.Services.AddScoped<ApiService>();
 
+// Fügt als Singelton die Client-Factory-Appkontext-Infrastruktur hinzu 
 builder.Services.AddSingleton<AppBehaviorManager>();
 
-
+// Baut die App
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Während der Entwicklung /Error & Scrit-Transport-Security aktiviert 
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // TODO: Der Standard für HSTS ist 30 Tage 
     app.UseHsts();
 }
 
+// Aktiviert das Http auf Https umgeleitet wird
 app.UseHttpsRedirection();
 
+// Aktiviert die Unterstützung von statischen Dateien
 app.UseStaticFiles();
+
+// Verhindert Webseitenübergriffe auf die Cookies der Anwendung
 app.UseAntiforgery();
 
+// Aktiviert Server-Rendering für Mudblazor in der App
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
